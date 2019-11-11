@@ -1,0 +1,26 @@
+const path=require('path');
+module.exports={
+    devServer:{
+        proxy:{
+            "/vips-mobile":{
+                target:"https://mapi.vip.com",
+                cahngeOrigin:true
+            }
+        }
+    },
+    configureWebpack:{
+        resolve:{
+            alias:{
+                "@":path.join(__dirname,"./src"),
+                "@api":path.join(__dirname,"./src/api"),
+                "@assets":path.join(__dirname,"./src/assets"),
+                "@common":path.join(__dirname,"./src/common"),
+                "@lib":path.join(__dirname,"./src/lib"),
+                "@pages":path.join(__dirname,"./src/pages"),
+                "@routers":path.join(__dirname,"./src/routers"),
+                "@store":path.join(__dirname,"./src/store"),
+                "@utils":path.join(__dirname,"./src/utils")
+            }
+        }
+    }
+}
