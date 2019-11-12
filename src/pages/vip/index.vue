@@ -18,21 +18,13 @@
         <div class="title">
             <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/04/25/182/15561868764222.jpg" alt="">
         </div>
-        <div class="one">
-            <img src="https://h2.appsimg.com/a.appsimg.com/upload/brand/upcb/2019/11/01/118/ias_e7bdf7e9-4c40-4f8d-9677-e398c2ce9955_1135x545_85.jpg" alt="">
-            <p>COACH男女包专场</p>
-            <b>2.2折起</b>
+        <div class="one" v-for="(item,index) in  floor_list" 
+        :key="index">
+            <img :src="item.data.brand.brand_image">
+            <p>{{item.data.brand.title}}</p>
+            <b>{{item.data.brand.discount}}</b>
         </div>
-        <div class="one">
-            <img src="https://h2.appsimg.com/a.appsimg.com/upload/brand/upcb/2019/10/31/13/ias_a7b5c796-acf9-424d-99a0-5f336f0a9893_1135x545_85.jpg" alt="">
-            <p>古驰GUCCI品质专场</p>
-            <b>3.2折起</b>
-        </div>
-        <div class="one">
-            <img src="https://h2.appsimg.com/a.appsimg.com/upload/brand/upcb/2019/10/31/107/ias_fde820c8-d80b-4c13-86af-87a19e69c982_1135x545_85.jpg" alt="">
-            <p>古驰GUCCI品质专场</p>
-            <b>3.2折起</b>
-        </div> 
+        
        </div>
     </div>
 </template>
@@ -40,6 +32,12 @@
 import {ApiNowApi} from '@api/vip'
 export default {
     name:"Vip",
+    data(){
+        return{
+            floor_list:[]
+        }
+    },
+
     methods:{
     //   async handle(f){
     //          let datas= await ApiNowApi(f);
@@ -47,7 +45,9 @@ export default {
     //     }
       async handle(){
              let datas= await ApiNowApi();
-             console.log(datas.data.data.floor_list);
+            //console.log(datas.data.data.floor_list)
+              this.floor_list=datas.data.data.floor_list;
+              console.log(this.floor_list);
         }
     },
  created() {
@@ -59,6 +59,7 @@ export default {
 
        //this.handle("&width=640&height=460&net=wifi&changeResolution=2&channel_name=%E5%94%AF%E5%93%81%C2%B7%E5%A5%A2&app_name=shop_wap&app_version=4.0&mars_cid=1573134055381_d77dc5e6615d906667736b120fcb1764&warehouse=VIP_BJ&api_key=8cec5243ade04ed3a02c5972bcda0d3f&fdc_area_id=915105106106&province_id=101105&city_id=101105101&saturn=&wap_consumer=B&standby_id=nature&source_app=yd_wap&mobile_platform=2&platform=2&client=wap&lightart_version=1&mobile_channel=mobiles-adp%3Ag1o71nr0%3A%3A%3A%3A%7C%7C&menu_code=20180118001&load_more_token=eyJjaGFubmVsX2lkIjoiMTYiLCJ0c2lmdCI6IjAiLCJicmFuZF9vZmZzZXQiOiIzMCIsImJyYW5kX3JlZmVyX2luZGV4IjoiNiIsInRvcGljX2dyb3VwIjoiMCJ9&_=1573521532984")
          this.handle();
+        
     },
 }
 </script>

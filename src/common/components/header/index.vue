@@ -2,7 +2,7 @@
     <div class="header">
       <div class="logo">
         <span>
-          <a href="javascript:;" class="iconfont">&#xe606;</a>
+          <a href="/#/details" class="iconfont" >&#xe606;</a>
         </span>
       </div>
       <div class="search">

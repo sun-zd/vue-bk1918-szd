@@ -3,6 +3,7 @@ export default {
     component:_=>import("@pages/house"),
     name:"house",
     meta:{
+        sign:true,
         flag:true,
         requiredAuth:false
     }

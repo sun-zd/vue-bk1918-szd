@@ -5,6 +5,7 @@ import life from "./life"
 import house from "./house"
 import rob from "./rob"
 import vip from "./vip"
+import details from "./details"
 Vue.use(VueRouter)
 
 const router=new VueRouter({
@@ -14,6 +15,7 @@ const router=new VueRouter({
             path:"/",
             redirect:"/reoommend",
             meta:{
+                sign:true,
                 flag:true,
                 requiredAuth:false
             }  
@@ -23,12 +25,14 @@ const router=new VueRouter({
         life,
         rob,
         vip,
+        details,
        {
            path:"/login",
            name:"login",
            component:_=>import("@pages/login"),
            meta:{
-               flag:false
+               flag:false,
+               sign:true,
            }
        }
     ]
