@@ -1,6 +1,6 @@
 <template>
     <div class="page">
-      
+      house
     </div>
 </template>
 <script>
