@@ -2,7 +2,7 @@
     <div class="header">
       <div class="logo">
         <span>
-          <a href="javascript:;" class="iconfont">&#xe606;</a>
+          <router-link tag="a" v-for="item in navs" :key="item.id" :to="item.path" class="iconfont">&#xe606;</router-link>
         </span>
       </div>
       <div class="search">
@@ -16,7 +16,17 @@
 </template>
 <script>
 export default {
-    name:"Header"
+    name:"Header",
+    data(){
+      return{
+        navs:[
+          {
+            id:0,
+            path:"/mine"
+          }
+        ]
+      }
+    }
 }
 </script>
 <style lang="scss">

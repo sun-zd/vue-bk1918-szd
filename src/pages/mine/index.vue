@@ -1,14 +1,13 @@
 <template>
-    <div  class="page">
-       Reoo
+    <div class="page">
+        <h2>login</h2>
     </div>
 </template>
 <script>
 export default {
-    name:"Reoommend",
+    
 }
 </script>
-
 <style>
 
 </style>

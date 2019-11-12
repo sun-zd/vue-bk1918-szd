@@ -1,13 +1,14 @@
 <template>
+
     <div id="nav">
         <ul>
-            <router-link tag="li"
-            v-for="item in navs"
+            <router-link
+            tag="li"
+            v-for="item in navs" 
             :key="item.id"
+            class="a"
             :to="item.path"
-            >
-            {{item.text}}
-            </router-link>
+            >{{item.text}}</router-link>
         </ul>
     </div>
 </template> 
@@ -47,7 +48,7 @@ export default {
     }
 }
 </script>
-<style lang="scss">
+<style >
     #nav{
         width: 100%;
         height:0.3rem;

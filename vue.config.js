@@ -4,7 +4,7 @@ module.exports={
         proxy:{
             "/vips-mobile":{
                 target:"https://mapi.vip.com",
-                cahngeOrigin:true
+                changeOrigin:true
             }
         }
     },
@@ -17,7 +17,7 @@ module.exports={
                 "@common":path.join(__dirname,"./src/common"),
                 "@lib":path.join(__dirname,"./src/lib"),
                 "@pages":path.join(__dirname,"./src/pages"),
-                "@routers":path.join(__dirname,"./src/routers"),
+                "@routers":path.join(__dirname,"./src/router"),
                 "@store":path.join(__dirname,"./src/store"),
                 "@utils":path.join(__dirname,"./src/utils")
             }

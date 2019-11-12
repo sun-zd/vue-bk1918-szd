@@ -12,6 +12,7 @@ server.interceptors.request.use((config) => {
 
     // config.headers["content-type"]="applicetion/json";
     // config.headers["token"]="applicetion/json";
+    return config;
 
 }, (err) => {
     return Promise.reject(err);
@@ -24,3 +25,4 @@ server.interceptors.response.use((res) => {
 }, (err) => {
     return Promise.reject(err);
 })
+export default server

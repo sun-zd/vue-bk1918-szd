@@ -1,13 +1,14 @@
 <template>
   <div id="app">
+    
+    <router-view></router-view>
     <Header/>
     <Nav v-if="$route.meta.flag" />
-    <router-view></router-view>
   </div>
 </template>
 <script>
-import Header from '@common/components/header'
 import Nav from '@common/components/nav'
+import Header from '@common/components/header'
 export default {
   name:"App",
   components:{

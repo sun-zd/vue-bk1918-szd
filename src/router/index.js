@@ -5,6 +5,7 @@ import life from "./life"
 import house from "./house"
 import rob from "./rob"
 import vip from "./vip"
+import mine from "./mine";
 Vue.use(VueRouter)
 
 const router=new VueRouter({
@@ -23,6 +24,7 @@ const router=new VueRouter({
         life,
         rob,
         vip,
+        mine,
        {
            path:"/login",
            name:"login",
