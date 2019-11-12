@@ -54,6 +54,7 @@ export default {
         position: fixed;
         left: 0;
         top:0.3rem;
+        background: #fff
 
     }
     #nav ul .router-link-active{

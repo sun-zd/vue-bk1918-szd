@@ -26,6 +26,11 @@ export default {
   height: 0.3rem;
   background: #fff;
   font-size: 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #fff;
 }
 .header .logo {
   width: 0.3rem;
