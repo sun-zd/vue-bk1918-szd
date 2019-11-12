@@ -2,7 +2,11 @@
     <div class="header">
       <div class="logo">
         <span>
+<<<<<<< HEAD
           <router-link tag="a" v-for="item in navs" :key="item.id" :to="item.path" class="iconfont">&#xe606;</router-link>
+=======
+          <a href="/#/details" class="iconfont" >&#xe606;</a>
+>>>>>>> 174bd919dbb62da83fdfd13ebb7ca31e45ecee2e
         </span>
       </div>
       <div class="search">
@@ -36,6 +40,11 @@ export default {
   height: 0.3rem;
   background: #fff;
   font-size: 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #fff;
 }
 .header .logo {
   width: 0.3rem;

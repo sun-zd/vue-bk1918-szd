@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="page">
     <div class="app_main">
       <div class="img_box">
@@ -311,6 +312,10 @@
           </div>
         </div>
       </div>
+=======
+    <div class="page">
+      house
+>>>>>>> 174bd919dbb62da83fdfd13ebb7ca31e45ecee2e
     </div>
   </div>
 </template>
