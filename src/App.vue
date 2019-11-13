@@ -1,16 +1,9 @@
 <template>
   <div id="app">
-<<<<<<< HEAD
-    
-    <router-view></router-view>
-    <Header/>
-    <Nav v-if="$route.meta.flag" />
-=======
     <Header v-if="$route.meta.sign" />
      <router-view></router-view>
     <Nav v-if="$route.meta.flag" />
    
->>>>>>> 174bd919dbb62da83fdfd13ebb7ca31e45ecee2e
   </div>
 </template>
 <script>

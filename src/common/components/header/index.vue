@@ -2,11 +2,7 @@
     <div class="header">
       <div class="logo">
         <span>
-<<<<<<< HEAD
-          <router-link tag="a" v-for="item in navs" :key="item.id" :to="item.path" class="iconfont">&#xe606;</router-link>
-=======
           <a href="/#/details" class="iconfont" >&#xe606;</a>
->>>>>>> 174bd919dbb62da83fdfd13ebb7ca31e45ecee2e
         </span>
       </div>
       <div class="search">
@@ -21,16 +17,6 @@
 <script>
 export default {
     name:"Header",
-    data(){
-      return{
-        navs:[
-          {
-            id:0,
-            path:"/mine"
-          }
-        ]
-      }
-    }
 }
 </script>
 <style lang="scss">

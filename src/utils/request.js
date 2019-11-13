@@ -15,12 +15,7 @@ server.interceptors.request.use((config) => {
 
     // config.headers["content-type"]="applicetion/json";
     // config.headers["token"]="applicetion/json";
-<<<<<<< HEAD:src/utils/request.js
-    return config;
-
-=======
 return config
->>>>>>> 174bd919dbb62da83fdfd13ebb7ca31e45ecee2e:src/utils/index.js
 }, (err) => {
     return Promise.reject(err);
 })
@@ -32,9 +27,5 @@ server.interceptors.response.use((res) => {
 }, (err) => {
     return Promise.reject(err);
 })
-<<<<<<< HEAD:src/utils/request.js
-export default server
-=======
 
 export default server;
->>>>>>> 174bd919dbb62da83fdfd13ebb7ca31e45ecee2e:src/utils/index.js

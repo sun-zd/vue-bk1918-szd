@@ -5,11 +5,7 @@ import life from "./life"
 import house from "./house"
 import rob from "./rob"
 import vip from "./vip"
-<<<<<<< HEAD
-import mine from "./mine";
-=======
 import details from "./details"
->>>>>>> 174bd919dbb62da83fdfd13ebb7ca31e45ecee2e
 Vue.use(VueRouter)
 
 const router=new VueRouter({
@@ -29,11 +25,7 @@ const router=new VueRouter({
         life,
         rob,
         vip,
-<<<<<<< HEAD
-        mine,
-=======
         details,
->>>>>>> 174bd919dbb62da83fdfd13ebb7ca31e45ecee2e
        {
            path:"/login",
            name:"login",

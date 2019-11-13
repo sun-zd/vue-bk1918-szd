@@ -1,4 +1,4 @@
-import http from "@utils"
+import http from "@utils/request";
 
 // export const ApiNowApi=(f)=>http({
 //     method:"get",

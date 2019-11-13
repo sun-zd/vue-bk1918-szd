@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div class="page">
     <div class="app_main">
       <div class="img_box">
@@ -273,10 +272,10 @@
             />
           </a>
         </div>
-        <div class="same" v-for="(item,index) in list" :key="index">
+        <div class="same" v-for="(item,index) in list?list:''" :key="index">
           <div class="same_img">
             <img
-              :src="item.image"
+              :src="item.data.special.image || item.data.brand.brand_image"
             />
           </div>
           <div class="same_bottom">
@@ -312,10 +311,6 @@
           </div>
         </div>
       </div>
-=======
-    <div class="page">
-      house
->>>>>>> 174bd919dbb62da83fdfd13ebb7ca31e45ecee2e
     </div>
   </div>
 </template>
