@@ -18,12 +18,13 @@
         <div class="title">
             <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/04/25/182/15561868764222.jpg" alt="">
         </div>
-        <div class="one" v-for="(item,index) in  floor_list" 
-        :key="index">
+        <router-link class="one" v-for="(item,index) in  floor_list" 
+        :key="index" tag="div"
+         to="/details" >
             <img :src="item.data.brand.brand_image">
             <p>{{item.data.brand.title}}</p>
             <b>{{item.data.brand.discount}}</b>
-        </div>
+        </router-link>
         
        </div>
     </div>
@@ -34,7 +35,8 @@ export default {
     name:"Vip",
     data(){
         return{
-            floor_list:[]
+            floor_list:[],
+            
         }
     },
 
