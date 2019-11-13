@@ -20,28 +20,28 @@ export default {
             navs:[
                 {
                     id:0,
-                    text:"今日推荐",
+                    text:"推荐",
                     path:"/reoommend"
                 },
                 {
                     id:1,
-                    text:"最后疯抢",
+                    text:"返厂",
                     path:"/rob"
                 },
                 {
                     id:2,
-                    text:"家电",
-                    path:"/house"
+                    text:"彩妆",
+                    path:"/vip"
                 },
                 {
                     id:3,
-                    text:"生活",
+                    text:"会员",
                     path:"/life"
                 },
                 {
                     id:4,
-                    text:"唯品•奢",
-                    path:"/vip"
+                    text:"我的",
+                    path:"/house"
                 },
             ]
         }

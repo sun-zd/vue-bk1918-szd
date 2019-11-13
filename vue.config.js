@@ -2,8 +2,12 @@ const path=require('path');
 module.exports={
     devServer:{
         proxy:{
-            "/vips-mobile":{
-                target:"https://mapi.vip.com",
+            "/cache":{
+                target:"https://image.yunifang.com",
+                changeOrigin:true
+            },
+            "/yunifang":{
+                target:"https://vip.yunifang.com",
                 changeOrigin:true
             }
         }
