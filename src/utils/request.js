@@ -6,16 +6,13 @@ const server = axios.create({
 })
 
 server.interceptors.request.use((config) => {
-    if (config.method == "GET") {
-        config.params = { ...config.data };
+    if (config.method == "get") {
+        config.params = {...config.data };
     }
-    // if(config.method == "POST"){
-    //     config.params = { ...config.data };
-    // }
 
     // config.headers["content-type"]="applicetion/json";
     // config.headers["token"]="applicetion/json";
-return config
+    return config;
 }, (err) => {
     return Promise.reject(err);
 })
@@ -28,4 +25,4 @@ server.interceptors.response.use((res) => {
     return Promise.reject(err);
 })
 
-export default server;
+export default server
