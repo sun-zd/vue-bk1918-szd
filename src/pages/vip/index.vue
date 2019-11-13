@@ -36,7 +36,12 @@ export default {
     data(){
         return{
             floor_list:[],
-            
+            title:[
+                {
+                    index:0,
+                    url:""
+                },
+            ]
         }
     },
 
