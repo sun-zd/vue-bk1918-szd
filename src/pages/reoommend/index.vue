@@ -129,29 +129,8 @@
 </div>
 </template>
 <script>
-import {indexNowApi} from "@api/index";
 export default {
     name:"Reoommend",
-    data(){
-        return {
-            indexList:[],
-            listOne:["男装","女装","女鞋","内衣","手机"],
-            listTwo:["运动户外","母婴童装","美妆个护","手表配饰","清仓"]
-        }
-    },
-    created(){
-        this.handleGetIndexList();
-        
-    },
-    methods:{
-        async handleGetIndexList(){
-            let data=await indexNowApi("mobiles-adp%3Ag1o71nr0%3A%3A%3A%3A%7C%7C&menu_code=20181203001&_=1573547709652");
-            //console.log(data.data.data.floor_list);
-
-            this.indexList=data.data.data.floor_list;
-            // console.log(indexList[0])
-        }
-    },
    
 }
 
