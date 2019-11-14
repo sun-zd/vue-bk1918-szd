@@ -1,290 +1,135 @@
 <template>
   <div class="page">
-    <div class="app_main">
-      <div class="img_box">
-        <div class="im1">
+    <div class="min_box">
+      <div class="first">
+        <div class="poto">
           <img
-            src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/138/15733056717543.jpg"
+            src="http://h2.appsimg.com/b.appsimg.com/2016/03/16/7314/14581158319696.png"
             alt
+            class="img1"
           />
         </div>
-        <div class="im2">
+        <div class="one">
           <img
-            src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/88/15733056836377.jpg"
+            src="https://h2.appsimg.com/a.appsimg.com/upload/uls/0/2018/12/11/150/deae2906957a4f30a33577a686379f4f.png"
             alt
           />
+          <span>银卡会员</span>
         </div>
-        <div class="list">
-          <div>
+        <div class="two">182*****980</div>
+      </div>
+    </div>
+    <div class="mine_box">
+      <div class="user_order">
+        <router-link tag="a" to='/obli'>
+          <span>
+            <i class="iconfont">&#xe673;</i>
+          </span>
+          <span>待付款</span>
+        </router-link>
+        <a href="javascript:;">
+          <span>
+            <i class="iconfont">&#xe6f0;</i>
+          </span>
+          <span>待收获</span>
+        </a>
+        <router-link tag="a" to='/indent'>
+          <span>
+            <i class="iconfont">&#xe64b;</i>
+          </span>
+          <span>全部订单</span>
+        </router-link>
+      </div>
+      <div class="user_menus">
+        <ul>
+          <li>
             <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/72/15733056050189.jpg"
-                alt
-              />
+              <span>我的收藏</span>
+              <i class="iconfont">&#xe63b;</i>
             </a>
-          </div>
-          <div>
+          </li>
+          <li>
             <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/125/15733055913245.jpg"
-                alt
-              />
+              <span>购物车历史</span>
+              <i class="iconfont">&#xe63b;</i>
             </a>
-          </div>
-          <div>
+          </li>
+          <li>
             <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/20/15733055728572.jpg"
-                alt
-              />
+              <span>浏览历史</span>
+              <i class="iconfont">&#xe63b;</i>
             </a>
-          </div>
-          <div>
+          </li>
+          <li>
             <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/103/15733055581053.jpg"
-                alt
-              />
+              <span>申请退换</span>
+              <i class="iconfont">&#xe63b;</i>
             </a>
-          </div>
-          <div>
+          </li>
+          <li>
             <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/53/15733055434353.jpg"
-                alt
-              />
+              <span>零钱</span>
+              <i class="iconfont">&#xe63b;</i>
             </a>
-          </div>
-        </div>
-        <div class="list">
-          <div>
+          </li>
+          <li>
             <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/19/15732818881116.jpg"
-                alt
-              />
+              <span>唯品花</span>
+              <i class="iconfont">&#xe63b;</i>
             </a>
-          </div>
-          <div>
+          </li>
+          <li>
             <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/184/15732819506609.jpg"
-                alt
-              />
+              <span>优惠券</span>
+              <i class="iconfont">&#xe63b;</i>
             </a>
-          </div>
-          <div>
+          </li>
+          <li>
             <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/22/15732820121063.jpg"
-                alt
-              />
+              <span>我的唯品币</span>
+              <i class="iconfont">&#xe63b;</i>
             </a>
-          </div>
-          <div>
+          </li>
+          <li>
+            <a href="/#/dir">
+              <span>收获地址</span>
+              <i class="iconfont">&#xe63b;</i>
+            </a>
+          </li>
+          <li>
             <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/166/15732820674806.jpg"
-                alt
-              />
+              <span>修改登录密码</span>
+              <i class="iconfont">&#xe63b;</i>
             </a>
-          </div>
-          <div>
+          </li>
+          <li>
             <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/82/15732821238273.jpg"
-                alt
-              />
+              <span>管理支付密码</span>
+              <i class="iconfont">&#xe63b;</i>
             </a>
-          </div>
-        </div>
-        <div class="im3">
-          <a href="javascript:;">
-            <img
-              src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/129/15732822194546.gif"
-              alt
-            />
-          </a>
-        </div>
-        <div class="ltart">
-          <div>
+          </li>
+          <li>
             <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/65/15733029173003.jpg"
-                alt
-              />
+              <span>绑定手机</span>
+              <i class="iconfont">&#xe63b;</i>
             </a>
-          </div>
-          <div>
+          </li>
+          <li>
             <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/104/15732980815369.jpg"
-                alt
-              />
+              <span>实名认证</span>
+              <i class="iconfont">&#xe63b;</i>
             </a>
-          </div>
-          <div>
+          </li>
+          <li>
             <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/24/15732831446373.jpg"
-                alt
-              />
+              <span>我的银行卡</span>
+              <i class="iconfont">&#xe63b;</i>
             </a>
-          </div>
-        </div>
-        <div class="ltart">
-          <div>
-            <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/140/15733017784984.jpg"
-                alt
-              />
-            </a>
-          </div>
-          <div>
-            <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/70/15732903890059.jpg"
-                alt
-              />
-            </a>
-          </div>
-          <div>
-            <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/160/15733072431891.jpg"
-                alt
-              />
-            </a>
-          </div>
-        </div>
-        <div class="ltart">
-          <div>
-            <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/116/15733029425517.jpg"
-                alt
-              />
-            </a>
-          </div>
-          <div>
-            <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/128/15733042564701.jpg"
-                alt
-              />
-            </a>
-          </div>
-          <div>
-            <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/17/15732841229094.jpg"
-                alt
-              />
-            </a>
-          </div>
-        </div>
-        <div class="ltart">
-          <div>
-            <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/78/15733044470947.jpg"
-                alt
-              />
-            </a>
-          </div>
-          <div>
-            <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/161/15732842854880.jpg"
-                alt
-              />
-            </a>
-          </div>
-          <div>
-            <a href="javascript:;">
-              <img
-                src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/79/15733015385627.jpg"
-                alt
-              />
-            </a>
-          </div>
-        </div>
-        <div class="im4">
-          <a href="javascript:;">
-            <img
-              src="https://h2.appsimg.com/b.appsimg.com/upload/mst/2019/11/08/119/mst_2664e5f0d17e85b0b847743682e312e9_1125x522_90.jpg"
-              alt
-            />
-          </a>
-          <div class="bottom">
-            <div>
-              <img
-                src="https://h2.appsimg.com/a.appsimg.com/upload/brandcool/0/0e2fe4c375eb44249061074dacd8a51c/10024588/primary_210x105_90.png"
-                alt
-              />
-              <span>7.5折起</span>
-            </div>
-            <div>
-              <img
-                src="https://h2.appsimg.com/a.appsimg.com/upload/brandcool/0/c9f538f3705249edb7ff55c31754d035/10001363/primary_210x105_90.png"
-                alt
-              />
-              <span>1.2折起</span>
-            </div>
-            <div>
-              <img
-                src="https://h2.appsimg.com/a.appsimg.com/upload/brandcool/0/22e432e45f2f49e28cc2d7749ff8914e/10006250/primary_210x105_90.png"
-                alt
-              />
-              <span>4折起</span>
-            </div>
-            <div>
-              <img
-                src="https://h2.appsimg.com/a.appsimg.com/upload/brandcool/0/10a733f1309441419c433d55edff3bcd/10004090/primary_210x105_90.png"
-                alt
-              />
-              <span>4.7折封顶</span>
-            </div>
-          </div>
-        </div>
-        <div class="im5">
-          <a href="javascript:;">
-            <img
-              src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/197/15732843550539.jpg"
-              alt
-            />
-          </a>
-        </div>
-        <div class="im6">
-          <a href="javascript:;">
-            <img
-              src="https://h2.appsimg.com/b.appsimg.com/upload/mst/2019/11/09/150/mst_eb2760600e0c97674a61f036de3e15d2_1125x389_90.jpg"
-              alt
-            />
-          </a>
-        </div>
-        <div class="collect">
-          <a href>
-            <img
-              src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/09/82/15732844122256.jpg"
-              alt
-            />
-          </a>
-        </div>
-        <div class="same" v-for="(item,index) in list?list:''" :key="index">
-          <div class="same_img">
-            <img
-              :src="item.data.special.image || item.data.brand.brand_image"
-            />
-          </div>
-          <div class="same_bottom">
-            <p>大牌会集 SONY耳机音响特卖专场</p>
-            <div>
-              <span>1.7</span>折起
-            </div>
-          </div>
-        </div>
+          </li>
+        </ul>
+      </div>
+      <div class="user_logout">
+        <a href="javascript:;">退出登录</a>
       </div>
       <div class="foot_downlod">
         <a href="javascript:;">
@@ -298,9 +143,7 @@
       <div class="page_foot">
         <div class="wap_foot">
           <div class="first">
-            <a href="javascript:;">唯品会首页</a>
-            <a href="javascript:;">关于我们</a>
-            <a href="javascript:;">个人中心</a>
+            <a href="javascript:;" v-for="(pers,num) in three" :key="num">{{pers.name}}</a>
           </div>
           <p>Copyright © 2008-2017 m.vip.com, All Rights Reserved 粤ICP备08114786号</p>
           <div class="last">
@@ -315,217 +158,189 @@
   </div>
 </template>
 <script>
-import {houseNowApi} from "@api/house";
+import Vue from 'vue';
+import { CouponCell, CouponList } from 'vant';
+
+Vue.use(CouponCell).use(CouponList);
 export default {
   name: "House",
-  data(){
-    return{
-      list:[]
-    }
-  },
-  // created(){
-  //   this.handleGetData()
-  // },
-  // methods:{
-  //   async handleGetData(load_more_token){
-  //     let data= await houseNowApi(load_more_token);
-  //     this.list=data.data.data.floor_list;
-  //     console.log(this.list)
-  //   }
-  // }
+  data() {
+    return {
+      three: [
+        { name: "唯品会首页" },
+        { name: "关于我们" },
+        { name: "个人中心" }
+      ]
+    };
+  }
 };
 </script>
-
+  
 <style>
-.app_main {
+.min_box {
   width: 100%;
-  height: 100%;
+  height: 1.75rem;
+  background: url("http://h2.vipstatic.com/ms2-m.vipstatic.com/static/base/img/07e0a3f4.user-login-bg.png")
+    no-repeat;
+  background-size: 100%;
   overflow-y: auto;
 }
-.app_main .img_box{
-  width: 100%;
+.min_box .top {
+  display: flex;
+  justify-content: space-between;
 }
-.app_main .im1 {
-  width: 100%;
-  height: 1.2rem;
-}
-.app_main .im1 img {
-  width: 100%;
-  height: 100%;
-}
-.app_main .im2 {
-  width: 100%;
+.min_box .top span {
+  display: block;
+  width: 0.4rem;
   height: 0.4rem;
+  text-align: center;
+  line-height: 0.4rem;
 }
-.app_main .im2 img {
+.min_box .first {
   width: 100%;
-  height: 100%;
-}
-.app_main .list {
-  width: 100%;
-  height: 0.7rem;
-  display: flex;
-  justify-content: space-around;
-}
-.app_main .list div {
-  width: 0.64rem;
-  height: 100%;
-}
-.app_main .list div a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.app_main .list div a img {
-  width: 100%;
-  height: 100%;
-}
-.app_main .im3 {
-  width: 100%;
-  height: 0.66rem;
-}
-.app_main .im3 a {
-  width: 100%;
-  height: 100%;
-}
-.app_main .im3 a img {
-  width: 100%;
-  height: 100%;
-}
-.app_main .ltart {
-  width: 100%;
-  height: 1.1rem;
-  display: flex;
-  justify-content: space-around;
-}
-.app_main .ltart div {
-  width: 1.06rem;
-  height: 100%;
-}
-.app_main .ltart div a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.app_main .ltart div a img {
-  width: 100%;
-  height: 100%;
-}
-.app_main .im4 {
-  width: 100%;
-  height: 1.48rem;
-  position: relative;
-}
-.app_main .im4 a {
-  width: 100%;
-  height: 100%;
-}
-.app_main .im4 a img {
-  width: 100%;
-  height: 100%;
-}
-.app_main .im4 .bottom {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 1rem;
-  display: flex;
-  padding: 0 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.app_main .im4 .bottom div {
-  width: 0.7rem;
-  height: 0.7rem;
-  background: #fff;
+  height: 1.14rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.min_box .first .poto {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAMAAAC8EZcfAAABgFBMVEUAAAC3oGq4o3G9pHCxmWeOdE3IrnvArHbLv5iXeEPEoU6znGnEu4rBrpCkiFibejyVdDyuklnMvpSFWRy+sZ3Dsn+qkFnMvJDNvIni1abk3LKzll/x6szDrXjs4Jvi16DDt6a7pnORbTydfUiDYSygg0fa2L7+/fv5+dz///+jjFWmk2C1mmeylV2umWedekamil/38+zy7uSrk2vIsnKlhEiYflXUwpXArXqsiU6QdkDCsIS5p3u2pHOchE+ehl/Nuoq7o2qum3aujly7qIS/pnS1nl/Bq2zu6dzHtZTJtYWsklDay4+RbzKVfkq3nXff1bv6+PPr49G0kEz9/fjTwofh2se1m1LWyZ6jkW+0oGybdjGdgTrm37DWz6qHaj2lglTh06zTuXLr5MKrij/d0p/MsWnKu3ypfTV1ThWxooTXyLO7sYnx6q6JYie9pV5+XDDKrVy+mmKWbD/RxKjKwKWHaC+YbCW2j2bbx3748r/gypz9/eH59c7n1oZfOgwhvo8bAAAAfHRSTlMAeBCjB/7+Jf4r/VT+/I1bidNY/v6SvrLKdi3si8b5vf7nyLak4Nup0//////////////////////////////////////////////////////////////////////////////////////////////////////////////+utNpBQAADj9JREFUGBnNwQVj22YaAODXKDmJw9AG2q7ttvvEYMsyMzMzxwGHmdu/ftfb7UbFkPU8AA+nxaampt+/e/GvyomZqLG66szMu/eTU1MGLYycelyleW2R4jeiVx8fZPbDm+use2KwlaRqjBhIzWgmx9UwKurxhRnpTEqV9xkTy+ktzuYt0zhISlFdSHRt1F1iILUt+WrmmclZNTw7TPV232oJ9+y4dNgmw+fBgVNsrJvKm742kWLb+3ubbOc8ennY6fgIM+5bUxngGRkmfw7joo1wldDRqwl3MMX4mZbD5mt2KzVfsqyPsltXppjfinIR3tzHt2mL3+qdUWHwLLTji5KTXo8zelpXuS7HJ0QyfGx2e6w6/Dqho3vJICP5L+l6uNJxyjs7nVSyIceSRCxM2ZemtPDUsEndobPo4ObqqcY6ZW5Ud6gLvz0Wnc9E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")
+    no-repeat;
+  background-size: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-.app_main .im4 .bottom div img {
+.min_box .first .img1 {
   width: 0.6rem;
-  height: 0.3rem;
+  height: 0.6rem;
+  border-radius: 50%;
 }
-.app_main .im4 .bottom div span {
-  font-size: 8px;
-  color: rgba(0, 0, 0, 0.84);
-  margin-top: 18px;
-}
-.app_main .im5 {
+.min_box .first .one {
   width: 100%;
-  height: 0.58rem;
-}
-.app_main .im5 a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.app_main .im5 a img {
-  width: 100%;
-  height: 100%;
-}
-.app_main .im6 {
-  width: 100%;
-  height: 1.1rem;
-}
-.app_main .im6 a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.app_main .im6 a img {
-  width: 100%;
-  height: 100%;
-}
-.app_main .collect {
-  width: 100%;
-  height: 0.5rem;
-}
-.app_main .collect a {
-  width: 100%;
-  height: 100%;
-}
-.app_main .collect a img {
-  width: 100%;
-  height: 100%;
-}
-.app_main .same {
-  width: 100%;
-  height: 2rem;
-  background: #fff;
+  height: 0.22rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.min_box .first .one img {
+  width: 0.2rem;
+  height: 0.2rem;
+}
+.min_box .first .one span {
+  font-size: 0.12rem;
+  color: #98989f;
+  position: relative;
+}
+.min_box .first .two {
+  text-align: center;
+  color: #222;
+  font-size: 11px;
+}
+.mine_box {
+  flex: 1;
+}
+.mine_box .user_order {
+  width: 100%;
+  height: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+.mine_box .user_order a {
+  display: flex;
+  width: 30%;
+  height: 0.7rem;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
-.app_main .same .same_img {
-  width: 100%;
-  height: 1.4rem;
+.mine_box .user_order a span:nth-child(1) {
+  width: 0.32rem;
+  height: 0.32rem;
+  display: block;
+  border-radius: 50%;
+  background: #fcf9f1;
+  position: relative;
+  line-height: 0.32rem;
+  text-align: center;
 }
-.app_main .same .same_img img {
+.mine_box .user_order a span i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  color: #666;
+}
+.mine_box .user_order a span:nth-child(2) {
+  font-size: 0.08rem;
+  color: #585c64;
+  margin-top: 10px;
+}
+.mine_box .user_menus {
+  width: 100%;
+  height: 5.9rem;
+  border-top: 1px solid #ddd;
+  margin-bottom: 0.2rem;
+}
+.mine_box .user_menus ul {
   width: 100%;
   height: 100%;
 }
-.app_main .same .same_bottom {
-  flex: 1;
-  padding: 10px;
+.mine_box .user_menus ul li {
+  width: 100%;
+  height: 0.42rem;
+  display: block;
+  margin: 0;
 }
-.app_main .same .same_bottom p {
-  font-size: 12px;
-  font-weight: bolder;
+.mine_box .user_menus ul li a {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #555;
 }
-.app_main .same .same_bottom div {
-  font-size: 10px;
-  margin-top: 10px;
+.mine_box .user_menus ul li a span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
-.app_main .same .same_bottom div span {
-  color: rgb(222, 61, 150);
+.mine_box .user_menus ul li a i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
 }
-.app_main .foot_downlod {
+.mine_box .user_logout {
+  width: 100%;
+  height: 0.42rem;
+  border-top: 1px solid #ddd;
+}
+.mine_box .user_logout a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+  line-height: 0.34rem;
+}
+.mine_box .foot_downlod {
   height: 0.52rem;
   background: #f3f4f5;
 }
-.app_main .foot_downlod a {
+.mine_box .foot_downlod a {
   display: flex;
   width: 100%;
   height: 100%;
@@ -533,13 +348,13 @@ export default {
   align-items: center;
   padding: 0 12px;
 }
-.app_main .foot_downlod a div:nth-child(1) {
+.mine_box .foot_downlod a div:nth-child(1) {
   width: 2.74rem;
   height: 0.35rem;
   display: flex;
   align-items: center;
 }
-.app_main .foot_downlod a div:nth-child(1) span {
+.mine_box .foot_downlod a div:nth-child(1) span {
   display: block;
   width: 0.36rem;
   height: 0.36rem;
@@ -550,7 +365,7 @@ export default {
   text-align: center;
   line-height: 0.36rem;
 }
-.app_main .foot_downlod a div:nth-child(1) i {
+.mine_box .foot_downlod a div:nth-child(1) i {
   overflow: hidden;
   word-break: break-all;
   white-space: nowrap;
@@ -559,7 +374,7 @@ export default {
   font-size: 12px;
   margin-left: 10px;
 }
-.app_main .foot_downlod a div:nth-child(2) {
+.mine_box .foot_downlod a div:nth-child(2) {
   width: 0.6rem;
   height: 0.26rem;
   text-align: center;
@@ -568,57 +383,57 @@ export default {
   color: #cf3e8e;
   font-size: 12px;
 }
-.app_main .page_foot {
+.mine_box .page_foot {
   width: 100%;
   height: 1.23rem;
   border-top: 1px solid #ddd;
 }
-.app_main .page_foot .wap_foot {
+.mine_box .page_foot .wap_foot {
   width: 100%;
   height: 100%;
   background: #f3f4f5;
 }
-.app_main .page_foot .wap_foot .first {
+.mine_box .page_foot .wap_foot .first {
   width: 100%;
   height: 0.25rem;
   padding: 0 10px;
 }
-.app_main .page_foot .wap_foot .first a {
+.mine_box .page_foot .wap_foot .first a {
   font-size: 0.12rem;
   margin-top: 5px;
   color: #585c64;
 }
-.app_main .page_foot .wap_foot .first a:nth-child(1) {
+.mine_box .page_foot .wap_foot .first a:nth-child(1) {
   float: left;
 }
-.app_main .page_foot .wap_foot .first a:nth-child(2) {
+.mine_box .page_foot .wap_foot .first a:nth-child(2) {
   float: left;
   margin-left: 10px;
 }
-.app_main .page_foot .wap_foot .first a:nth-child(3) {
+.mine_box .page_foot .wap_foot .first a:nth-child(3) {
   float: right;
 }
-.app_main .page_foot .wap_foot p {
+.mine_box .page_foot .wap_foot p {
   font-size: 10px;
   color: #ccc;
   text-align: center;
   padding: 10px;
 }
-.app_main .page_foot .wap_foot .last {
+.mine_box .page_foot .wap_foot .last {
   width: 2.56rem;
   height: 0.53rem;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
-.app_main .page_foot .wap_foot .last span {
+.mine_box .page_foot .wap_foot .last span {
   width: 0.2rem;
   height: 0.17rem;
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAACWFBMVEUAAADnw3P/+cnYrn3ks2HeqFfu46v+/ODz6Kr//+P9/eXyzHnpx4udaFjx166xkHz387jz6ZL034vcp1nx38fQq3Ht3oDq2IP79NDkvFnTk3DZr4LKhFvDfz7r0pjbnFHpyF7jrFPnvGz488ns2Y3oxnzv2X/42oL+2I//74bktoDktoLjvGnfr2fhs2j/95fw1rvbrGLZqG3Rrnb9v1TbuofksVDVHhgAAXgBAW3gpUpvd4XNAAIDAmXluVzpx2PqyFzrwFfuzWbqvFrlv1LWjkbYkj7XPiD/0ljaSinklTj90Gj143Prv0/ruFDpwWDmt1femUTw1Gz1x1fltFvThT3UAwmwo2zdhTXcnUP/217+xVLysERaU2rJJxPTOCLQFg3XdTjQPynXYTHpgj79LA/yy27uXiP5oj+7ABDtcTDgbjbBvINtgpFzY2GUj4G7TCYAAIDu2HXouU/psUvorknuyFrpym3alkrvymE4FjfzfCjVdCjPLBrYnliRelnWMR+9kF7ooD3XkVNONU/8jiy5i1j/723twmL/2E2TYDY6EjnBDAvRDBGptJHNrFLWwHhODk7/vmDVaDLJWSpUOFMMAF1cX3hgHlDEGAqUd1zFUiSNhndCJETZAAbGPh2Ej5lMADnVSCrLPSFpAjaxDg4AG47dtmmBWDrEazOEaUrlYCOjfVKeXzAAEHriqVfgjkfKtnj/4mPy2HgXMInTZT18ennYzHfNwnHiRh42Gk2njVn2gjbTvIe1gD8ACJH6xESjmYSUjHXOeDrFrny0mVgcPpf/tUnV4jRxAAAANnRSTlMA6Uas5saACEIaJcOa+WnOAqu660EC4ZNc9BRIXZyM0vDkvFon++wwsr6xx+Db+TUc9eVvw5jVfch/AAABbklEQVQY02NggABOPn5+Pk4GZMDEzLt2xao1vMxMCDH2xqqulauzlod3t7HDxDi5W+qrw+I9bTL6pmpARbn0dsW2mpvXeib0TLKey6gCFtQ/VLg7PazBvDfeJj3Hco46SMzAJN9i38555u7u5jbu2y23aXIBBY0zDhYe3WMzxc1lQ0LWDst8DzagoKnXkf15BwrmT07Mdt2UZ5ETwwMUNIpIO2ZZkLJocXJS9lbbLZu9dIGChoeP51pkpibPTkxJzbTMjQ7VAQpqRXrvXbZw6cy4OM+kJes2epuBtGu7rfdeYGFrO3HGNFsL66gQK26goGpds1fahFnW4f3TY607miLN1ICCyi5WrjXBUZ3RMR7tHhGuZg4cINdLKLiEujk5mzk7BQVWlDOCxRhEWBzsAxwd/CudrQKC7IUhgkI+RXYhzmb+foFWdnZOPoKQ0BSXLA72LfErdSzztRdjE4AGqJSMLKu8Igurkpy0KIgPAF1iah19uh7QAAAAAElFTkSuQmCC")
     no-repeat;
   float: left;
 }
-.app_main .page_foot .wap_foot .last i {
+.mine_box .page_foot .wap_foot .last i {
   color: #ccc;
   font-size: 12px;
   float: left;

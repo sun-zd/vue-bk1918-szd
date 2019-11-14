@@ -6,8 +6,10 @@ import house from "./house"
 import rob from "./rob"
 import vip from "./vip"
 import details from "./details"
-import search from "./search"
-import jia from "./jia"
+import address from "./address"
+import dir from "./dir"
+import obli from "./obli"
+import indent from "./indent"
 Vue.use(VueRouter)
 
 const router=new VueRouter({
@@ -28,15 +30,17 @@ const router=new VueRouter({
         rob,
         vip,
         details,
-        search,
-        jia,
+        address,
+        dir,
+        obli,
+        indent,
        {
            path:"/login",
            name:"login",
            component:_=>import("@pages/login"),
            meta:{
                flag:false,
-               sign:true,
+               sign:false,
            }
        }
     ]
