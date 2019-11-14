@@ -19,7 +19,7 @@ export default {
     name:"Header",
 }
 </script>
-<style>
+<style lang="scss">
 
 .header {
   width: 100%;

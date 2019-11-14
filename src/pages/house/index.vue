@@ -336,7 +336,6 @@ export default {
 };
 </script>
 
-<<<<<<< HEAD
 <style>
 .app_main {
   width: 100%;
@@ -625,8 +624,4 @@ export default {
   float: left;
   margin-left: 5px;
 }
-=======
-<style scoped>
-
->>>>>>> jy
 </style>

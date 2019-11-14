@@ -1,12 +1,7 @@
 <template>
   <div id="app">
-<<<<<<< HEAD
-    <Header v-if="$route.meta.sign" />
-     <router-view></router-view>
-=======
     <router-view></router-view>
     <Header v-if="$route.meta.flag"/>
->>>>>>> jy
     <Nav v-if="$route.meta.flag" />
    
   </div>
