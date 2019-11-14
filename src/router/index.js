@@ -6,6 +6,8 @@ import house from "./house"
 import rob from "./rob"
 import vip from "./vip"
 import details from "./details"
+import search from "./search"
+import jia from "./jia"
 Vue.use(VueRouter)
 
 const router=new VueRouter({
@@ -26,6 +28,8 @@ const router=new VueRouter({
         rob,
         vip,
         details,
+        search,
+        jia,
        {
            path:"/login",
            name:"login",

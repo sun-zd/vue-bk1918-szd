@@ -42,7 +42,11 @@ export default {
 }
 </script>
 
+<<<<<<< HEAD
 <style>
+=======
+<style scoped>
+>>>>>>> jy
 .main{
     width:100%;
     overflow-x: hidden;
@@ -93,6 +97,7 @@ export default {
 }
 .main .one{
     width: 3rem;
+<<<<<<< HEAD
     height: 2.4rem;
     margin: 0 auto;
     background: #fff;
@@ -105,17 +110,32 @@ export default {
     border-radius: 0.05rem 0.05rem 0 0;
     margin-left: 10%;
       margin-top: 0.08rem
+=======
+    height: 2rem;
+    margin: 0 auto;
+}
+.main .one img{
+    width: 100%;
+    height: 1.4rem;
+    border-radius: 0.05rem 0.05rem 0 0;
+>>>>>>> jy
 }
 .main .one p{
     font-size: 0.12rem;
     margin-top: 0.1rem;
     font-weight: 600;
+<<<<<<< HEAD
     margin-left: 10%
+=======
+>>>>>>> jy
 }
 .main .one b{
     display: block;
     font-size: 0.12rem;
     margin-top: 0.1rem;
+<<<<<<< HEAD
     margin-left: 10%
+=======
+>>>>>>> jy
 }
 </style>
