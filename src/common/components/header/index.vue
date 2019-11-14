@@ -6,10 +6,10 @@
         </span>
       </div>
       <div class="search">
-        <span>大家正在搜索:女式大衣</span>
+        <span><a href="/#/search">大家正在搜索:女式大衣</a></span>
       </div>
       <div class="list iconfont">
-        <a href="javascript:;">&#xe7e8;</a>
+        <a href="/#/jia">&#xe7e8;</a>
       </div>
     </div>
 
@@ -19,7 +19,7 @@ export default {
     name:"Header"
 }
 </script>
-<style lang="scss">
+<style>
 
 .header {
   width: 100%;

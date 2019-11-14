@@ -70,6 +70,73 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.main{
+    width:100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background:#f3f4f6;
+}
+.main .banner{
+    width: 100%;
+    height: 1.28rem;
+}
+.main .banner img{
+    width: 100%;
+    height: 100%;
+}
+.main .list{
+    width: 100%;
+    height: 0.75rem;
+    display: flex;
+    justify-content: space-around;
+}
+.main .list img{
+    display: block;
+    width:1.06rem;
+    height: 0.75rem;
+    border: none;
+    outline: none;
+}
+.main .img{
+    width: 100%;
+    height: 0.75rem;
+    display: flex;
+    justify-content: space-around;
+}
+.main .img img{
+    display: block;
+    width:1.06rem;
+    height: 0.75rem;
+    border: none;
+    outline: none;
+}
+.main .title{
+    width: 100%;
+    height: 0.55rem;
+}
+.main .title img{
+    width: 100%;
+    height: 100%;
+}
+.main .one{
+    width: 3rem;
+    height: 2rem;
+    margin: 0 auto;
+}
+.main .one img{
+    width: 100%;
+    height: 1.4rem;
+    border-radius: 0.05rem 0.05rem 0 0;
+}
+.main .one p{
+    font-size: 0.12rem;
+    margin-top: 0.1rem;
+    font-weight: 600;
+}
+.main .one b{
+    display: block;
+    font-size: 0.12rem;
+    margin-top: 0.1rem;
+}
 </style>

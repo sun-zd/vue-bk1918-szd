@@ -1,40 +1,86 @@
 <template>
 <div class="page">
-    <div class="main" v-for="(item,index) in indexList" :key="index">
+       <div class="main">
         <div class="cart">
             <span class="iconfont">&#xe652;</span>
         </div>
         <div class="banner">
-            <!-- <span>{{indexList[0]}}</span> -->
-            <!-- :src=indexList[0].data.operation_data.data.block[0].child[0].data.imageUrl -->
-            <img :src=indexList[0].data.operation_data.data.block[0].child[0].data.imageUrl>
+            <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/07/93/15731280632348.jpg">
         </div>
         <div class="shopLogoOne">
-            <div v-for="(item,index) in listOne" :key="index">
+            <div>
                 <div class="logoImg">
-                    <img :src=indexList[2].data.operation_data.data.block[0].child[index].data.imageUrl>
+                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/6/15730312264438.png">
                 </div>
-                <span>{{listOne[index]}}</span>
-            </div>                       
+                <span>女装</span>
+            </div>
+            <div>
+                <div class="logoImg">
+                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/105/15730373733738.png">
+                </div>
+                <span>男装</span>
+            </div>
+            <div>
+                <div class="logoImg">
+                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/6/15730312264438.png">
+                </div>
+                <span>女装</span>
+            </div>
+            <div>
+                <div class="logoImg">
+                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/6/15730312264438.png">
+                </div>
+                <span>女装</span>
+            </div>
+            <div>
+                <div class="logoImg">
+                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/6/15730312264438.png">
+                </div>
+                <span>女装</span>
+            </div>
         </div>
         <div class="shopLogoTwo">
-            <div v-for="(item,index) in listOne" :key="index">
+            <div>
                 <div class="logoImg">
-                    <img :src=indexList[3].data.operation_data.data.block[0].child[index].data.imageUrl>
+                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/6/15730312264438.png">
                 </div>
-                <span>{{listTwo[index]}}</span>
-            </div>                       
+                <span>女装</span>
+            </div>
+            <div>
+                <div class="logoImg">
+                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/6/15730312264438.png">
+                </div>
+                <span>女装</span>
+            </div>
+            <div>
+                <div class="logoImg">
+                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/6/15730312264438.png">
+                </div>
+                <span>女装</span>
+            </div>
+            <div>
+                <div class="logoImg">
+                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/6/15730312264438.png">
+                </div>
+                <span>女装</span>
+            </div>
+            <div>
+                <div class="logoImg">
+                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/6/15730312264438.png">
+                </div>
+                <span>女装</span>
+            </div>
         </div>
-       <img :src=indexList[4].data.operation_data.data.block[0].child[0].data.imageUrl
-                style="width: 100%; height: auto;">
-        <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/07/6/15730962464589.jpg"
-                class="imgList">
-        <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/07/57/15731066354558.jpg"
-                class="imgList">
-        <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/07/97/15730949911324.jpg"
-                class="imgList">
-        <img src="//h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/08/23/15732101601961.jpg"
-                style="width: 100%; height: auto;">
+        <a href="#"><img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/07/176/15730997166752.jpg"
+                style="width: 100%; height: auto;"></a>
+        <a href="#"><img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/07/6/15730962464589.jpg"
+                class="imgList"></a>
+        <a href="#"><img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/07/57/15731066354558.jpg"
+                class="imgList"></a>
+        <a href="#"><img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/07/97/15730949911324.jpg"
+                class="imgList"></a>
+        <a href="#"><img src="//h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/08/23/15732101601961.jpg"
+                style="width: 100%; height: auto;"></a>
         <img src="https://h2.appsimg.com/b.appsimg.com/upload/mst/2019/11/07/52/mst_dbf542ce6c9e0cbf7a120b95a59757d5_1125x429_90.jpg"
             style="width: 100%; height: auto;">
 
@@ -125,22 +171,23 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
+   
 </div>
 </template>
 <script>
-import {indexNowApi} from "@api/index";
+import {indexNowApi} from "@api/jia";
 export default {
     name:"Reoommend",
     data(){
         return {
             indexList:[],
-            listOne:["男装","女装","女鞋","内衣","手机"],
-            listTwo:["运动户外","母婴童装","美妆个护","手表配饰","清仓"]
+            // listOne:["男装","女装","女鞋","内衣","手机"],
+            // listTwo:["运动户外","母婴童装","美妆个护","手表配饰","清仓"]
         }
     },
     created(){
-        this.handleGetIndexList();
+        // this.handleGetIndexList();
         
     },
     methods:{
@@ -157,7 +204,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 .cart{
     width:0.4rem;
     height:0.4rem;
@@ -211,6 +258,7 @@ export default {
     margin-left:0.06rem;
     margin-top:0.05rem;
     overflow: hidden;
+    text-align:center;
 }
 .shopLogoOne div .logoImg img{
     width:170%;
@@ -239,6 +287,7 @@ export default {
     margin-left:0.06rem;
     margin-top:0.05rem;
     overflow: hidden;
+    text-align:center;
 }
 .shopLogoTwo div .logoImg img{
     width:100%;
