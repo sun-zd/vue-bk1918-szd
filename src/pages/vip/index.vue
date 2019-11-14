@@ -4,26 +4,16 @@
         <div class="banner">
             <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/07/191/15730953315416.jpg" alt="">
         </div>
-        <div class="list">
-            <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/04/15/161/15553238357179.jpg" alt="">
-            <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/04/15/159/15553238493272.jpg" alt="">
-            <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/04/15/126/15553238628467.jpg" alt="">
-        </div>
-        <div class="img">
-            <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/04/04/198/15543463865945.jpg" alt="">
-            <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/04/04/171/15543464045927.jpg" alt="">
-            <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/04/04/121/15543464251931.jpg" alt="">
-            <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/04/04/109/15543464456414.jpg" alt="">
-        </div>
+        
         <div class="title">
             <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/04/25/182/15561868764222.jpg" alt="">
         </div>
-        <div class="one" v-for="(item,index) in  floor_list" 
-        :key="index">
-            <img :src="item.data.brand.brand_image">
-            <p>{{item.data.brand.title}}</p>
-            <b>{{item.data.brand.discount}}</b>
-        </div>
+        <router-link class="one" v-for="(item,index) in  floor_list" 
+        :key="index" tag="div" :to="'/details/'+item.id" >
+            <img :src="item.goods_img">
+            <p>{{item.efficacy}}</p>
+            <b>￥{{item.shop_price}}</b>
+        </router-link>
         
        </div>
     </div>
@@ -39,11 +29,11 @@ export default {
     },
 
     methods:{
-      async handle(){
-             let datas= await ApiNowApi();
+      async handle(goods_type){
+             let datas= await ApiNowApi(goods_type);
             //console.log(datas.data.data.floor_list)
-              this.floor_list=datas.data.data.floor_list;
-              console.log(this.floor_list);
+              this.floor_list=datas.data;
+              console.log(datas.data);
         }
     },
  created() {
@@ -103,22 +93,29 @@ export default {
 }
 .main .one{
     width: 3rem;
-    height: 2rem;
+    height: 2.4rem;
     margin: 0 auto;
+    background: #fff;
+    margin-top: 0.1rem;
+    overflow: hidden;
 }
 .main .one img{
-    width: 100%;
-    height: 1.4rem;
+    width: 80%;
+    height: 1.6rem;
     border-radius: 0.05rem 0.05rem 0 0;
+    margin-left: 10%;
+      margin-top: 0.08rem
 }
 .main .one p{
     font-size: 0.12rem;
     margin-top: 0.1rem;
     font-weight: 600;
+    margin-left: 10%
 }
 .main .one b{
     display: block;
     font-size: 0.12rem;
     margin-top: 0.1rem;
+    margin-left: 10%
 }
 </style>
