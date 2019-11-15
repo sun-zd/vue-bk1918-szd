@@ -117,8 +117,32 @@
 </div>
 </template>
 <script>
+import {indexNowApi} from "@api/reoommend";
 export default {
     name:"Reoommend",
+    data(){
+        return {
+            indexList:[],
+            goodsOrActADs:[],
+            bottomActAds:[],
+            circularADs:[]
+        }
+    },
+    created(){
+         this.handleGetIndexList();
+        
+    },
+    methods:{
+        async handleGetIndexList(){
+            let data=await indexNowApi();
+            this.goodsOrActADs=data.data.goodsOrActADs;
+            this.bottomActAds=data.data.bottomActAds;
+            this.circularADs=data.data.circularADs;
+            this.goodsOrActADs==data.data.goodsOrActADs?data.data.goodsOrActADs:"";
+            this.bottomActAds==data.data.bottomActAds?data.data.bottomActAds:"";
+            this.circularADs==data.data.circularADs?data.data.circularADs:"";
+        }
+    },
    
 }
 </script>

@@ -11,7 +11,7 @@
         <span>密码</span>
         <input type="tsxt" placeholder="请输入密码" id="password">
     </div>
-    <button class="button"><a href="/#/reoommend">登录</a></button>
+    <router-link tag="button" to='/reoommend' class="button">登录</router-link>
     <div class="agree">
         <span><a href="#">注册账号</a></span>
         <span><a href="#">忘记密码</a></span>
@@ -44,6 +44,7 @@ export default {
     border-bottom: 1px solid #e7e7e7;
     padding-left:15px;
     position: relative;
+    font-size: 12px;
 }
 .one #username{
     position: absolute;
@@ -62,6 +63,7 @@ span{
     border-bottom: 1px solid #e7e7e7;
     padding-left:15px;
     position: relative;
+    font-size: 12px;
 }
 .two #password{
     position: absolute;
@@ -79,6 +81,7 @@ span{
     margin-top:10px;
     font-size:16px;
     outline: none;
+    color: #98989f;
 }
 .agree{
     font-size:13px;

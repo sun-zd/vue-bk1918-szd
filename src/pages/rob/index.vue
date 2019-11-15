@@ -25,9 +25,6 @@ export default {
       this.list = data.data;
     }
   },
-  mounted() {
-    new BScroll(this.$refs.scrollBody);
-  }
 };
 </script>
 
