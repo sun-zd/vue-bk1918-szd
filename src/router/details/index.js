@@ -5,5 +5,6 @@ export default {
     meta:{sign:false,
         flag:false,
         requiredAuth:false
-    }
+    },
+    props:true
 }

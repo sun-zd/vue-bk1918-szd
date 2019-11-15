@@ -16,12 +16,3 @@ export const ApiNowApi=(goods_type)=>http({
     // https://image.yunifang.com/cache/wap/cache_category_detail_142_1573649871628.json
     // https://vip.yunifang.com/yunifang/wap/goods/api/category/detail/142?number=10&sort=9
 })
-export const detailsNowApi=()=>http({
-    method:"get",
-    url:"/yunifang/wap/goods/api/goods/detail",
-    data:{
-        
-    }
-    // https://image.yunifang.com/cache/wap/cache_category_detail_142_1573649871628.json
-    // https://vip.yunifang.com/yunifang/wap/goods/api/category/detail/142?number=10&sort=9
-})
