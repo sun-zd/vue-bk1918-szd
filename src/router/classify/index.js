@@ -1,7 +1,7 @@
 export default {
-    path:"/search",
-    component:_=>import("@pages/search"),
-    name:"search",
+    path:"/classify",
+    component:_=>import("@pages/classify"),
+    name:"classify",
     meta:{
         sign:false,
         flag:false,

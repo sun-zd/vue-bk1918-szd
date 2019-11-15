@@ -40,7 +40,7 @@ export default {
     name:"Search"
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
     .headerSearch{
     width:100%;
     height:0.3754rem;

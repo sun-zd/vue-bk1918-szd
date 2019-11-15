@@ -1,11 +1,8 @@
 import http from "@utils/request"
 
-export const indexNowApi=(mobile_channel)=>http({
+export const indexNowApi=()=>http({
     method:"get",
-   
-    data:{
-        mobile_channel:mobile_channel
-    }
+    url:"/cache/wap/cache_home_1573703502946.json",
 })
 // export const indexNowApi=(data)=>{
 //     console.log(data);

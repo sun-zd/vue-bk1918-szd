@@ -5,36 +5,36 @@
             <span class="iconfont">&#xe652;</span>
         </div>
         <div class="banner">
-            <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/07/93/15731280632348.jpg">
+            <img src="https://image.yunifang.com/yunifang/images/goods/ad0/19111119389914149831283313.jpg">
         </div>
         <div class="shopLogoOne">
             <div>
                 <div class="logoImg">
-                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/6/15730312264438.png">
+                    <img src="https://image.yunifang.com/yunifang/images/goods/temp/191111212642319473690352098.jpg">
                 </div>
                 <span>女装</span>
             </div>
             <div>
                 <div class="logoImg">
-                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/105/15730373733738.png">
+                    <img src="https://image.yunifang.com/yunifang/images/goods/temp/19111121361769033907138577.jpg">
                 </div>
                 <span>男装</span>
             </div>
             <div>
                 <div class="logoImg">
-                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/6/15730312264438.png">
+                    <img src="https://image.yunifang.com/yunifang/images/goods/temp/191111212167219512645466012.jpg">
                 </div>
                 <span>女装</span>
             </div>
             <div>
                 <div class="logoImg">
-                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/6/15730312264438.png">
+                    <img src="https://image.yunifang.com/yunifang/images/goods/temp/19111120546487775719844924.jpg">
                 </div>
                 <span>女装</span>
             </div>
             <div>
                 <div class="logoImg">
-                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/6/15730312264438.png">
+                    <img src="https://image.yunifang.com/yunifang/images/goods/temp/19111120436159935372872448.jpg">
                 </div>
                 <span>女装</span>
             </div>
@@ -71,104 +71,45 @@
                 <span>女装</span>
             </div>
         </div>
-        <a href="#"><img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/07/176/15730997166752.jpg"
-                style="width: 100%; height: auto;"></a>
-        <a href="#"><img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/07/6/15730962464589.jpg"
+        <div class="cz">
+        <div class="caizhuang">彩妆推荐</div>
+        <div class="caizhuangList">
+        <a href="#"><img src="https://image.yunifang.com/yunifang/images/goods/temp/19111121276119473690356115.jpg"
                 class="imgList"></a>
-        <a href="#"><img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/07/57/15731066354558.jpg"
+        <a href="#"><img src="https://image.yunifang.com/yunifang/images/goods/temp/19111120546487775719844924.jpg"
                 class="imgList"></a>
-        <a href="#"><img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/07/97/15730949911324.jpg"
+        <a href="#"><img src="https://image.yunifang.com/yunifang/images/goods/temp/19111120436159935372872448.jpg"
                 class="imgList"></a>
-        <a href="#"><img src="//h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/08/23/15732101601961.jpg"
-                style="width: 100%; height: auto;"></a>
-        <img src="https://h2.appsimg.com/b.appsimg.com/upload/mst/2019/11/07/52/mst_dbf542ce6c9e0cbf7a120b95a59757d5_1125x429_90.jpg"
-            style="width: 100%; height: auto;">
-
-        <a href="#"><img
-                src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/11/08/28/dd9a8076-2d20-4628-b40e-97a7535dfbee_251x251_90.jpg"
-                class="womenDress"></a>
-        <a href="#"><img
-                src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/107827/2019/0528/23/128ac2fd-619a-4efc-928b-3c7b3cacb716_251x251_90.jpg"
-                class="softWater"></a>
-        <a href="#"><img
-                src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/09/05/140/740b3260-e5e1-43e0-8c0d-5849da4a5643_251x251_90.jpg"
-                class="boyBody"></a>
-        <a href="#"><img
-                src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/104218/2019/0701/72/3bc8bc21-60a0-4902-81db-528989c44771_251x251_90.jpg"
-                class="bag"></a>
-
-        <div class="goodGoods">
-            <img src="https://h2.appsimg.com/b.appsimg.com/upload/mst/2019/10/15/147/mst_d56fa74afedc5e1c20d91734819549bd_1125x660_90.png"
-                style="width:100%;height:auto;margin-top:0.4rem;">
-            <div class="goodsList">
-                <div class="one">
-                    <img class="oneOne"
-                        src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/102138/2019/1101/56/84a8b959-9193-4725-af4a-f078d5ac7603_251x251_90.jpg">
-                    <img class="oneTwo"
-                        src="https://h2.appsimg.com/a.appsimg.com/upload/brandcool/0/3c2f294134db410fac9dcba6d48cda5f/10004171/primary_120x60_90.png">
-                    <span class="oneSpanOne">快抢价</span><span class="oneSpanTwo">￥99</span>
-                </div>
-                <div class="one">
-                    <img class="oneOne"
-                        src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/106143/2019/0812/134/433a47bc-4d4f-477d-9ca4-000f8791aafd_251x251_90.jpg">
-                    <img class="oneTwo"
-                        src="https://h2.appsimg.com/a.appsimg.com/upload/brandcool/0/3eb1e71070a04ef19c12daa360f7ef56/10007154/primary_120x60_90.png">
-                    <span class="oneSpanOne">快抢价</span><span class="oneSpanTwo">￥99</span>
-                </div>
-                <div class="one">
-                    <img class="oneOne"
-                        src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/136999/2019/0925/15/187c6627-1012-4890-a181-bad94fb0dce6_251x251_90.jpg">
-                    <img class="oneTwo"
-                        src="https://h2.appsimg.com/a.appsimg.com/upload/brandcool/0/33e98d4f9e824d12986d25707b421b38/10000226/primary_120x60_90.png">
-                    <span class="oneSpanOne">快抢价</span><span class="oneSpanTwo">￥99</span>
-                </div>
-                <div class="one">
-                    <img class="oneOne"
-                        src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcimg/2019/08/14/70/628233491565770597762_251x251_90.jpg">
-                    <img class="oneTwo"
-                        src="https://h2.appsimg.com/a.appsimg.com/upload/brandcool/0/1aa04c8a09fa4f49a51a5e340b7d04cb/10007180/primary_120x60_90.png">
-                    <span class="oneSpanOne">快抢价</span><span class="oneSpanTwo">￥99</span>
-                </div>
-            </div>
-
         </div>
+        <div class="caizhuangList">
+        <a href="#"><img src="https://image.yunifang.com/yunifang/images/goods/temp/19111121276119473690356115.jpg"
+                class="imgList"></a>
+        <a href="#"><img src="https://image.yunifang.com/yunifang/images/goods/temp/19111120546487775719844924.jpg"
+                class="imgList"></a>
+        <a href="#"><img src="https://image.yunifang.com/yunifang/images/goods/temp/19111120436159935372872448.jpg"
+                class="imgList"></a>
+        </div>
+        </div>
+
+        
         <div class="todyNew">
             <img src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2019/08/23/111/1566543733364.jpg">
         </div>
-        <div class="newShop">
-            <div class="newShopCenter">
+        <div class="newShop" v-for="(item,index) in goodsOrActADs" :key="index">
+            <div class="newShopCenter" :data-id="goodsOrActADs[index].id" :adTypeDynamicDetail="goodsOrActADs[index].adTypeDynamicDetail">
                 <div class="newShopTop">
                     <img
-                        src="https://h2.appsimg.com/a.appsimg.com/upload/brand/upcb/2019/11/06/22/ias_157302024397581_1135x545_85.jpg">
+                        :src="goodsOrActADs[index].image">
                 </div>
                 <div class="newShopBottom">
-                    <div class="shopBottomOne"><span>欧莱雅Loreal化妆品专场</span></div>
-                    <div class="shopBottomTwo"><span><i>2</i>折起</span></div>
+                    <div class="shopBottomOne"><span>{{goodsOrActADs[index].title}}</span></div>
+                    <div class="shopBottomTwo"><span>现价<i>￥{{goodsOrActADs[index].adExtraAttributeVO.rTitle}}</i>{{goodsOrActADs[index].adExtraAttributeVO.subTitle}}</span></div>
                 </div>
             </div>
         </div>
-        <div class="newShop">
-            <div class="newShopCenter">
-                <div class="newShopTop">
-                    <img
-                        src="https://h2.appsimg.com/a.appsimg.com/upload/brand/upcb/2019/11/06/22/ias_157302024397581_1135x545_85.jpg">
-                </div>
-                <div class="newShopBottom">
-                    <div class="shopBottomOne"><span>欧莱雅Loreal化妆品专场</span></div>
-                    <div class="shopBottomTwo"><span><i>2</i>折起</span></div>
-                </div>
-            </div>
-        </div>
-        <div class="newShop">
-            <div class="newShopCenter">
-                <div class="newShopTop">
-                    <img
-                        src="https://h2.appsimg.com/a.appsimg.com/upload/brand/upcb/2019/11/06/22/ias_157302024397581_1135x545_85.jpg">
-                </div>
-                <div class="newShopBottom">
-                    <div class="shopBottomOne"><span>欧莱雅Loreal化妆品专场</span></div>
-                    <div class="shopBottomTwo"><span><i>2</i>折起</span></div>
-                </div>
+        <div class="vipThing">
+            <div v-for="(item,index) in bottomActAds" :key="index" :data-id="bottomActAds[index].id">
+                <img :src="bottomActAds[index].image" alt="">
             </div>
         </div>
     </div> 
@@ -176,27 +117,30 @@
 </div>
 </template>
 <script>
-import {indexNowApi} from "@api/jia";
+import {indexNowApi} from "@api/reoommend";
 export default {
     name:"Reoommend",
     data(){
         return {
             indexList:[],
-            // listOne:["男装","女装","女鞋","内衣","手机"],
-            // listTwo:["运动户外","母婴童装","美妆个护","手表配饰","清仓"]
+            goodsOrActADs:[],
+            bottomActAds:[],
+            circularADs:[]
         }
     },
     created(){
-        // this.handleGetIndexList();
+         this.handleGetIndexList();
         
     },
     methods:{
         async handleGetIndexList(){
-            let data=await indexNowApi("mobiles-adp%3Ag1o71nr0%3A%3A%3A%3A%7C%7C&menu_code=20181203001&_=1573547709652");
-            //console.log(data.data.data.floor_list);
-
-            this.indexList=data.data.data.floor_list;
-            // console.log(indexList[0])
+            let data=await indexNowApi();
+            this.goodsOrActADs=data.data.goodsOrActADs;
+            this.bottomActAds=data.data.bottomActAds;
+            this.circularADs=data.data.circularADs;
+            this.goodsOrActADs==data.data.goodsOrActADs?data.data.goodsOrActADs:"";
+            this.bottomActAds==data.data.bottomActAds?data.data.bottomActAds:"";
+            this.circularADs==data.data.circularADs?data.data.circularADs:"";
         }
     },
    
@@ -231,10 +175,11 @@ export default {
 .banner{
     width:100%;
     height:1.28rem;
+    overflow: hidden;
 }
 .banner img{
     width:100%;
-    height:100%;
+    height:auto;
 }
 .shopLogoOne{
     width:100%;
@@ -260,10 +205,10 @@ export default {
     text-align:center;
 }
 .shopLogoOne div .logoImg img{
-    width:170%;
-    height:170%;
-    margin-left:-35%;
-    margin-top:-20%;
+    width:135%;
+    height:135%;
+    /* margin-left:2%; */
+    margin-top:-15%;
 }
 .shopLogoTwo{
     width:100%;
@@ -302,6 +247,24 @@ export default {
     width:33.3%;
     height:auto;
     float:left;
+}
+.cz{
+    width:100%;
+    height:2.8rem;
+    background:#fff;
+}
+
+.caizhuang{
+    width:100%;
+    /* margin-left:2%; */
+    height:0.5rem;
+    line-height:0.5rem;
+    text-align: center;
+    background:#fff;
+    font-size:20px;
+}
+.caizhuang img{
+    margin-top:10px;
 }
 .womenDress{
     width:0.72rem;
@@ -435,5 +398,19 @@ export default {
 .shopBottomTwo span i{
     color:red;
 }
-
+.vipThing{
+    width:100%;
+    height:1.4rem;
+    background:#fff;
+}
+.vipThing div{
+    width:46%;
+    margin:2%;
+    height:90%;
+    float:left;
+}
+.vipThing div img{
+    width:100%;
+    height:auto;
+}
 </style>

@@ -1,7 +1,7 @@
 export default {
-    path:"/search",
-    component:_=>import("@pages/search"),
-    name:"search",
+    path:"/obli",
+    component:_=>import("@pages/obli"),
+    name:"obli",
     meta:{
         sign:false,
         flag:false,

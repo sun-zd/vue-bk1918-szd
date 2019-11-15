@@ -3,6 +3,7 @@
     <div class="header">
         
         <div class="headerCenter">
+            <span class="iconfont back" @click="handleBack">&#xe614;</span>
             <div class="centerHeader">
                 <span class="fenlei">分类</span>
                 <!-- <span>品牌</span> -->
@@ -145,7 +146,12 @@
 </template>
 <script>
 export default {
-    name:"Jia"
+    name:"Classify",
+    methods:{
+        handleBack(){
+            this.$router.back();
+        }
+    }
 }
 </script>
 
@@ -159,18 +165,14 @@ export default {
     background:#fbfbfa;
     display:flex;
 }
-.headerLeft{
-    width:0.4rem;
-    height:100%;
-    float:left;
-    text-align:center;
-    line-height: 0.38rem;
-    font-size:15px;
-}
 .headerCenter{
-    flex:1;
-    float:left;
+    width: 100%;height: 100%;position: relative;
     font-size: 15px;
+}
+.headerCenter .back{
+    display:block;width: 0.38rem;height: 100%;
+    position: absolute;font-size: 20px;text-align: center;
+    line-height: 0.38rem;
 }
 .centerHeader{
     width:50%;
@@ -180,7 +182,7 @@ export default {
     margin-top:10px;
     border-radius: 5px;
 }
-.headerCenter span{
+.headerCenter .fenlei{
     display: block;
     width:100%;
     height:100%;

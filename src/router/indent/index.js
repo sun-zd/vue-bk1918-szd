@@ -1,7 +1,7 @@
 export default {
-    path:"/search",
-    component:_=>import("@pages/search"),
-    name:"search",
+    path:"/indent",
+    component:_=>import("@pages/indent"),
+    name:"indent",
     meta:{
         sign:false,
         flag:false,

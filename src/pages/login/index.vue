@@ -1,7 +1,7 @@
 <template>
     <div class="page">
        <div id="img">
-        <img src="">
+        <img src="https://image.yunifang.com/yunifang/images/goods/ad0/19111119389914149831283313.jpg">
     </div>
     <div class="one">
         <span>登录名</span>
@@ -11,16 +11,12 @@
         <span>密码</span>
         <input type="tsxt" placeholder="请输入密码" id="password">
     </div>
-    <button class="button">登录</button>
+    <router-link tag="button" to='/reoommend' class="button">登录</router-link>
     <div class="agree">
+        <span><a href="#">注册账号</a></span>
         <span><a href="#">忘记密码</a></span>
     </div>
-    <div class="line">
-        <span>或</span>
-    </div>
-    <button class="telLogin">
-        手机号注册登录
-    </button>
+   
     </div>
 </template>
 <script>
@@ -34,6 +30,12 @@ export default {
     width:100%;
     height:1.7rem;
     background:#ccc;
+    margin-top:-0.6rem;
+    overflow: hidden;
+}
+#img img{
+    width:100%;
+    height:auto;
 }
 .one{
     width:100%;
@@ -42,6 +44,7 @@ export default {
     border-bottom: 1px solid #e7e7e7;
     padding-left:15px;
     position: relative;
+    font-size: 12px;
 }
 .one #username{
     position: absolute;
@@ -53,10 +56,6 @@ span{
     float:left;
     font-size:16px;
 }
-input{
-    border:1px solid #000;
-    float:left;
-}
 .two{
     width:100%;
     height:0.53rem;
@@ -64,6 +63,7 @@ input{
     border-bottom: 1px solid #e7e7e7;
     padding-left:15px;
     position: relative;
+    font-size: 12px;
 }
 .two #password{
     position: absolute;
@@ -78,8 +78,10 @@ input{
     border:0;
     border-radius:0.22rem;
     margin-left:5%;
-    margin-top:30px;
+    margin-top:10px;
     font-size:16px;
+    outline: none;
+    color: #98989f;
 }
 .agree{
     font-size:13px;
