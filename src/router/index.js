@@ -10,6 +10,8 @@ import address from "./address"
 import dir from "./dir"
 import obli from "./obli"
 import indent from "./indent"
+import search from "./search"
+import classify from "./classify"
 Vue.use(VueRouter)
 
 const router=new VueRouter({
@@ -34,6 +36,8 @@ const router=new VueRouter({
         dir,
         obli,
         indent,
+        search,
+        classify,
        {
            path:"/login",
            name:"login",

@@ -6,10 +6,10 @@
         </span>
       </div>
       <div class="search">
-        <span>大家正在搜索:女式大衣</span>
+        <router-link tag="span" to='/search'>大家正在搜索:女式大衣</router-link>
       </div>
       <div class="list iconfont">
-        <a href="javascript:;">&#xe7e8;</a>
+        <router-link tag="a" to="/classify">&#xe7e8;</router-link>
       </div>
     </div>
 
