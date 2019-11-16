@@ -1,7 +1,7 @@
 <template>
 <div class="page">
        <div class="main">
-        <div class="cart">
+        <div class="cart" @click="push()">
             <span class="iconfont">&#xe652;</span>
         </div>
         <div class="banner">
@@ -141,6 +141,9 @@ export default {
             this.goodsOrActADs==data.data.goodsOrActADs?data.data.goodsOrActADs:"";
             this.bottomActAds==data.data.bottomActAds?data.data.bottomActAds:"";
             this.circularADs==data.data.circularADs?data.data.circularADs:"";
+        },
+        push(){
+            this.$router.push("/cart")
         }
     },
    

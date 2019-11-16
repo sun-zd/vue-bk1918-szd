@@ -1,9 +1,9 @@
 <template>
   <div class="page">
     <div class="main_box">
-      <div class="poster" v-for="(item,index) in list" :key="index">
+      <router-link class="poster" v-for="(item,index) in list" :key="index" tag="div" :to="'/details/'+item.id">
         <img :src="item.goods_img" class="im1" />
-      </div>
+      </router-link>
     </div>
   </div>
 </template>
@@ -23,6 +23,7 @@ export default {
     async robNowApi() {
       let data = await robNowApi();
       this.list = data.data;
+      console.log(this.list)
     }
   },
 };

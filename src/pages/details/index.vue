@@ -50,8 +50,8 @@
       </div>
     
     <div class="footer">
-      <span>查看购物车</span>
-      <span class="pin">加入购物车</span>
+      <router-link tag="span" to="/cart">查看购物车</router-link>
+      <span class="pin" @click="kly()">加入购物车</span>
     </div>
   </div>
   </keep-alive>
@@ -61,17 +61,43 @@ import { detailsNowApi } from "@api/details";
 export default {
   name: "Details",  
   props: ["id"],
-
+  //list:["img"],
   data() {
     return {
-      detali: {}
+      detali: {},
     };
+  },
+  methods:{
+      kly(){
+        var list={
+          id:this.detali.id,
+          img:this.detali.goods_img,
+          name:this.detali.efficacy,
+          price:this.detali.shop_price,
+          num:1,
+          check:false
+        }
+        console.log(list)
+      this.$store.dispatch("handlePush",list);
+    }
+    
   },
   async created() {
     let datas = await detailsNowApi(this.id);
-    this.detali=datas.data.goods
-    console.log(datas.data.version)
+    // console.log(datas.data.goods)
+    this.detali=datas.data.goods;
+
+    // console.log(this.id)
+    // var lll=this.detali.goods_desc[0].url
+    // console.log(lll)
+    // kly(){
+    //   //  console.log(this.img)
+    //   // //console.log(this.ltst)
+    //   this.$store.dispatch("handlePush",this.img);
+      
+    // };
   },
+ 
   // beforeUpdate() {
   //   console.log(datas.data.version)
   // },
@@ -87,7 +113,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .main {
   background: rgb(220, 218, 218);
   flex: 1;
