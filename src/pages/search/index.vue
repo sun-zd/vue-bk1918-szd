@@ -3,7 +3,8 @@
         <div class="headerSearch">
         
         <div class="searchIn">
-            <input type="text" placeholder="大家正在搜索:爆款限量抢" id="searchInput" style="background:#f3f4f5;">
+            <input type="text" placeholder="大家正在搜索:爆款限量抢" id="searchInput" style="background:#f3f4f5;"
+            v-model="search">
             <!-- <span>大家正在搜索:爆款限量抢</span> -->
         </div>
         <div class="list iconfont">
@@ -36,8 +37,29 @@
     </div>
 </template>
 <script>
+import {searchApi} from "@api/reoommend"
 export default {
-    name:"Search"
+    name:"Search",
+    data(){
+        return {
+            list:[],
+            search:""
+        }
+    },
+    // beforeMount() {
+    //     this.firstTime=0;
+    // },
+    
+    watch: {
+        async search(newVal){
+            let data = await searchApi(newVal);
+            console.log(data);
+        //    let lastTime = new Date().getTime();
+        //    if(lastTime - this.firstTime>300){
+               
+        //    }
+        }
+    },
 }
 </script>
 <style lang="scss" scoped>

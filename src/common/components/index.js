@@ -1,5 +1,5 @@
 import Vue from "vue"
-import Bscroll from "../components/bscroll"
+import Bscroll from "./bscroll"
 
 let commponentMap=[
     Bscroll

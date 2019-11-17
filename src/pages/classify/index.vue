@@ -156,14 +156,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.page{
-    display:flex;
-}
 .header{
     width:100%;
     height:0.38rem;
     background:#fbfbfa;
     display:flex;
+    position:absolute;
+    top: 0;
 }
 .headerCenter{
     width: 100%;height: 100%;position: relative;

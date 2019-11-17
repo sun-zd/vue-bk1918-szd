@@ -13,31 +13,26 @@
 <script>
 import Vue from "vue";
 import { AddressList } from "vant";
-
+import {onSave} from "../address";
 Vue.use(AddressList);
 export default {
   name: "Address",
   data() {
     return {
       chosenAddressId: "1",
-      list: [
-        {
-          id: "1",
-          name: "张三",
-          tel: "13000000000",
-          address: "浙江省杭州市西湖区文三路 138 号东方通信大厦 7 楼 501 室"
-        },
-        {
-          id: "2",
-          name: "李四",
-          tel: "1310000000",
-          address: "浙江省杭州市拱墅区莫干山路 50 号"
-        }
-      ]
+      list: []
     };
   },
-
+  created() {
+    // this.list.push(this.$router.currentRoute.query);
+    // sessionStorage.getItem("dir_info",JSON.stringify(this.list));
+    this.list=JSON.parse(sessionStorage.getItem("dir_info"));
+    
+  },
   methods: {
+    async handleList(){
+      
+    },
     onAdd() {
       this.$router.push({path:"/address"});
     },

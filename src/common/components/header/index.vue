@@ -6,7 +6,7 @@
         </span>
       </div>
       <div class="search">
-        <router-link tag="span" to='/search'>大家正在搜索:女式大衣</router-link>
+        <router-link tag="span" to='/search'>请输入商品名称</router-link>
       </div>
       <div class="list iconfont">
         <router-link tag="a" to="/classify">&#xe7e8;</router-link>
@@ -19,7 +19,7 @@ export default {
     name:"Header",
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 
 .header {
   width: 100%;

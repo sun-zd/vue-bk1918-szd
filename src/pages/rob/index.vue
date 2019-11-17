@@ -1,10 +1,12 @@
 <template>
   <div class="page">
-    <div class="main_box">
-      <div class="poster" v-for="(item,index) in list" :key="index">
+    <Sunlly-scroll ref="scroll">
+      <div class="main_box">
+        <router-link class="poster" v-for="(item,index) in list" :key="index" tag="div" :to="'/details/'+item.id">
         <img :src="item.goods_img" class="im1" />
+        </router-link>
       </div>
-    </div>
+    </Sunlly-scroll>
   </div>
 </template>
 <script>
@@ -16,6 +18,12 @@ export default {
       list: []
     };
   },
+  watch:{
+    list(){
+      this.$refs.scroll.handlefinishPullDown()
+    }
+    
+  },
   created() {
     this.robNowApi();
   },
@@ -25,15 +33,18 @@ export default {
       this.list = data.data;
     }
   },
+  mounted(){
+    this.$refs.scroll.handlepullingDown();
+    this.$refs.scroll.handleScroll();
+  }
 };
 </script>
 
-<style>
+<style scoped>
 .main_box {
   width: 100%;
-  height: 100%;
 }
-.main_box  .poster {
+.main_box .poster {
   width: 100%;
   height: 2.2rem;
 }

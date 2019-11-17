@@ -8,11 +8,6 @@
       </div>
       <div class="complete">
         <div class="tabar">
-          <div class="first">普通订单</div>
-          <div class="two">
-            <span>其他</span>
-            <span>得宝、旅游、卡券</span>
-          </div>
         </div>
         <div class="order" v-show="num==1">
           <div class="one">
@@ -167,7 +162,7 @@ export default {
     handleBack() {
       this.$router.back();
     },
-    hadnleHome() {
+    handsleHome() {
       this.$router.push("/reoommend");
     }
   }

@@ -10,11 +10,11 @@
             <p>我的U币</p>
         </div>
         <div>
-            <p>12</p>
+            <span class="gain"></span>
             <p>赚U币</p>
         </div>
         <div>
-            <p>12</p>
+            <span class="shop"></span>
             <p>U币商城</p>
         </div>
       </div>
@@ -36,14 +36,31 @@
               <img src="https://image.yunifang.com/yunifang/images/goods/ad0/18062709227398814422227588.jpg" alt="">
           </div>
       </div>
-
     </div>
   </div>
 </template>
 <script>
+import {LifeApi} from "@api/life";
 export default {
   name: "Life",
-  
+  data(){
+    return{
+      vipShop:[]
+    }
+  },
+  methods:{
+    async handleShop(){
+      let data = await LifeApi();
+      // if(data.code=406){
+      //   this.$router.push("/login")
+      // }else{
+      //   this.vipShop=data.data;
+      // }
+    }
+  },
+  created(){
+    this.handleShop();
+  }
 };
 </script>
 
@@ -66,15 +83,33 @@ export default {
   width: 100%;
   height: 0.768rem;
   background: #fff;
+  display: flex;
+  justify-content: space-around;
 }
 .lifeList div {
   width: 30%;
   height: 80%;
-  background: green;
-  float: left;
-  margin-top: 2%;
-  margin-left: 2.7%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.lifeList div p{
+  margin-top: 5px;
+}
+.lifeList div span{
+  display: block;
+  width: 0.24rem;
+  height: 0.22rem;
+}
+.lifeList div .gain{
+  background: url("https://wimg.yunifang.com/images/member-gift-u.png") no-repeat;
+  background-size: 100%;
+}
+.lifeList div .shop{
+  background: url("https://wimg.yunifang.com/images/member-gift-pig.png") no-repeat;
+  background-size: 100%;
 }
 .loop{
     width:100%;

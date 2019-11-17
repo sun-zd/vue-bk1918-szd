@@ -5,6 +5,7 @@ export default {
     meta:{
         sign:false,
         flage:false,
-        requiredAuth:false
+        requiredAuth:false,
+        pros:true
     }
 }

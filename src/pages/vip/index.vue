@@ -1,15 +1,8 @@
 <template>
   <!-- <better-S> -->
     <div class="page" >
-      <div class="main">
-        <!-- <div class="banner">
-            <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/07/191/15730953315416.jpg" alt="">
-        </div>-->
-
-        <!-- <div class="title">
-            <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/04/25/182/15561868764222.jpg" alt="">
-        </div>-->
-        <!-- <div class="scorll_center"> -->
+      <Sunlly-scroll>
+      <div class="main">        
         <router-link
           class="one"
           v-for="(item,index) in  floor_list"
@@ -22,10 +15,8 @@
           <b>￥{{item.shop_price}}</b>
         </router-link>
       </div>
-
-      <!-- </div> -->
+      </Sunlly-scroll>
     </div>
-  <!-- </better-S> -->
 </template>
 <script>
  import { ApiNowApi } from "@api/vip";
@@ -41,35 +32,19 @@ export default {
   methods: {
     async handle(goods_type) {
       let datas = await ApiNowApi(goods_type);
-      console.log(datas);
       this.floor_list = datas.data;
-      console.log(this.floor_list[0].id);
-      //console.log(datas.data);
     }
   },
   created() {
     this.handle();
   }
-  // mounted() {
-  //     new BScroll(this.$refs.vipBody)
-  // },
 };
 </script>
 
 <style scoped>
-/* .scorll_center{
-    position: absolute;
-    top:0.6rem;
-    left: 0; 
- } */
- /* .pages{
-
- } */
 .main {
   width: 100%;
-  height: 100%;
   overflow-x: hidden;
-  overflow-y: auto;
   background: #f3f4f6;
   position: absolute;
   top: 0.6rem;

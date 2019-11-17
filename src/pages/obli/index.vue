@@ -82,7 +82,7 @@ export default {
     handleBack() {
       this.$router.back();
     },
-    hadnleHome() {
+    handleHome() {
       this.$router.push("/reoommend");
     }
   }

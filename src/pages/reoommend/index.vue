@@ -7,69 +7,14 @@
         <div class="banner">
             <img src="https://image.yunifang.com/yunifang/images/goods/ad0/19111119389914149831283313.jpg">
         </div>
-        <div class="shopLogoOne">
-            <div>
-                <div class="logoImg">
-                    <img src="https://image.yunifang.com/yunifang/images/goods/temp/191111212642319473690352098.jpg">
-                </div>
-                <span>女装</span>
-            </div>
-            <div>
-                <div class="logoImg">
-                    <img src="https://image.yunifang.com/yunifang/images/goods/temp/19111121361769033907138577.jpg">
-                </div>
-                <span>男装</span>
-            </div>
-            <div>
-                <div class="logoImg">
-                    <img src="https://image.yunifang.com/yunifang/images/goods/temp/191111212167219512645466012.jpg">
-                </div>
-                <span>女装</span>
-            </div>
-            <div>
-                <div class="logoImg">
-                    <img src="https://image.yunifang.com/yunifang/images/goods/temp/19111120546487775719844924.jpg">
-                </div>
-                <span>女装</span>
-            </div>
-            <div>
-                <div class="logoImg">
-                    <img src="https://image.yunifang.com/yunifang/images/goods/temp/19111120436159935372872448.jpg">
-                </div>
-                <span>女装</span>
-            </div>
-        </div>
-        <div class="shopLogoTwo">
-            <div>
-                <div class="logoImg">
-                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/6/15730312264438.png">
-                </div>
-                <span>女装</span>
-            </div>
-            <div>
-                <div class="logoImg">
-                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/6/15730312264438.png">
-                </div>
-                <span>女装</span>
-            </div>
-            <div>
-                <div class="logoImg">
-                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/6/15730312264438.png">
-                </div>
-                <span>女装</span>
-            </div>
-            <div>
-                <div class="logoImg">
-                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/6/15730312264438.png">
-                </div>
-                <span>女装</span>
-            </div>
-            <div>
-                <div class="logoImg">
-                    <img src="http://h2.appsimg.com/a.appsimg.com/upload/flow/2019/11/06/6/15730312264438.png">
-                </div>
-                <span>女装</span>
-            </div>
+        <div class="tenImg">
+            <router-link 
+            v-for="(ten,number) in goodsOrActADs" 
+            :key="number" 
+            :to="'/details/'+ten.adTypeDynamicDetail"
+            tag="div">
+                <img :src="ten.image" alt="">
+            </router-link>
         </div>
         <div class="cz">
         <div class="caizhuang">彩妆推荐</div>
@@ -90,47 +35,53 @@
                 class="imgList"></a>
         </div>
         </div>
-
-        
         <div class="todyNew">
             <img src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2019/08/23/111/1566543733364.jpg">
         </div>
-        <div class="newShop" v-for="(item,index) in goodsOrActADs" :key="index">
-            <div class="newShopCenter" :data-id="goodsOrActADs[index].id" :adTypeDynamicDetail="goodsOrActADs[index].adTypeDynamicDetail">
+        <router-link class="newShop" 
+        v-for="(ites,index) in goodsOrActADs" 
+        :key="index"
+        tag="div"
+        :to="'/details/'+ites.adTypeDynamicDetail"
+        >
+            <div class="newShopCenter">
                 <div class="newShopTop">
-                    <img
-                        :src="goodsOrActADs[index].image">
+                    <img :src="ites.image">
                 </div>
                 <div class="newShopBottom">
-                    <div class="shopBottomOne"><span>{{goodsOrActADs[index].title}}</span></div>
-                    <div class="shopBottomTwo"><span>现价<i>￥{{goodsOrActADs[index].adExtraAttributeVO.rTitle}}</i>{{goodsOrActADs[index].adExtraAttributeVO.subTitle}}</span></div>
+                    <div class="shopBottomOne"><span>{{ites.title}}</span></div>
+                    <div class="shopBottomTwo"><span>现价<i>￥{{ites.adExtraAttributeVO.rTitle}}</i>{{ites.adExtraAttributeVO.subTitle}}</span></div>
                 </div>
             </div>
+        </router-link>
+        <div class="more" @click="examine()" v-if="this.num==1">
+            点击查看更多
         </div>
         <div class="vipThing">
-            <div v-for="(item,index) in bottomActAds" :key="index" :data-id="bottomActAds[index].id">
-                <img :src="bottomActAds[index].image" alt="">
+            <div v-for="(item,ine) in bottomActAds" :key="ine">
+                <img :src="item.image" alt="">
             </div>
         </div>
     </div> 
-   
 </div>
 </template>
 <script>
 import {indexNowApi} from "@api/reoommend";
+import {examineApi} from "@api/reoommend"
 export default {
     name:"Reoommend",
     data(){
         return {
+            num:"1",
             indexList:[],
             goodsOrActADs:[],
             bottomActAds:[],
-            circularADs:[]
+            circularADs:[],
+            list:[]
         }
     },
     created(){
          this.handleGetIndexList();
-        
     },
     methods:{
         async handleGetIndexList(){
@@ -141,9 +92,15 @@ export default {
             this.goodsOrActADs==data.data.goodsOrActADs?data.data.goodsOrActADs:"";
             this.bottomActAds==data.data.bottomActAds?data.data.bottomActAds:"";
             this.circularADs==data.data.circularADs?data.data.circularADs:"";
+        },
+        async examine(){
+            let datas = await examineApi();
+            for(var i=0;i<datas.data.length;i++){
+                this.goodsOrActADs.push(datas.data[i]);
+            }
+            this.num=0;
         }
     },
-   
 }
 </script>
 
@@ -174,74 +131,23 @@ export default {
  }
 .banner{
     width:100%;
-    height:1.28rem;
+    height:3.66rem;
     overflow: hidden;
 }
 .banner img{
     width:100%;
-    height:auto;
-}
-.shopLogoOne{
-    width:100%;
-    height:0.716rem;
-    background:#f3f4f6;
-    font-size:13px;
-    text-align:center;
-}
-.shopLogoOne div{
-    width:18%;
-    height:100%;
-    float:left;
-    margin-left:1.7%;
-}
-.shopLogoOne div .logoImg{
-    width:0.45rem;
-    height:0.45rem;
-    background:#efe7d4;
-    border-radius: 50%;
-    margin-left:0.06rem;
-    margin-top:0.05rem;
-    overflow: hidden;
-    text-align:center;
-}
-.shopLogoOne div .logoImg img{
-    width:135%;
-    height:135%;
-    /* margin-left:2%; */
-    margin-top:-15%;
-}
-.shopLogoTwo{
-    width:100%;
-    height:0.716rem;
-    background:#f3f4f6;
-    font-size:13px;
-    text-align:center;
-}
-.shopLogoTwo div{
-    width:18%;
-    height:100%;
-    float:left;
-    margin-left:1.7%;
-}
-.shopLogoTwo div .logoImg{
-    width:0.45rem;
-    height:0.45rem;
-    background:#efe7d4;
-    border-radius: 50%;
-    margin-left:0.06rem;
-    margin-top:0.05rem;
-    overflow: hidden;
-    text-align:center;
-}
-.shopLogoTwo div .logoImg img{
-    width:100%;
     height:100%;
 }
-.shopLogoTwo div .logoImg img{
-    width:170%;
-    height:170%;
-    margin-left:-35%;
-    margin-top:-20%;
+.tenImg{
+    width: 100%;height: 1.4rem;background: #F59D79;
+    opacity: 0.4;overflow-y: auto;
+}
+.tenImg div{
+    width:0.5rem;height: 0.5rem;border-radius: 50%;background: #fff;
+    float: left;margin:10px 6px 0 6px;
+}
+.tenImg div img{
+    width:100%;height: 100%;border-radius: 50%;
 }
 .imgList{
     width:33.3%;
@@ -397,6 +303,11 @@ export default {
 }
 .shopBottomTwo span i{
     color:red;
+}
+.more{
+    width: 100%;height: 0.3rem;background: #cf0a2c;
+    text-align: center;line-height: 0.3rem;font-size: 16px;
+    color: #fff;
 }
 .vipThing{
     width:100%;
