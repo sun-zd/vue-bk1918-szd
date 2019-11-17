@@ -1,7 +1,7 @@
 <template>
 <div class="page">
        <div class="main">
-        <div class="cart">
+        <div class="cart" @click="push()">
             <span class="iconfont">&#xe652;</span>
         </div>
         <div class="banner">

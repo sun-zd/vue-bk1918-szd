@@ -817,11 +817,7 @@
 
 "@vant/icons@1.1.15":
   version "1.1.15"
-<<<<<<< HEAD
-  resolved "https://registry.npm.taobao.org/@vant/icons/download/@vant/icons-1.1.15.tgz#53c51ace21e9992bfeeb2e1ad9094fbf6506d116"
-=======
   resolved "https://registry.npm.taobao.org/@vant/icons/download/@vant/icons-1.1.15.tgz?cache=0&sync_timestamp=1571923117293&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vant%2Ficons%2Fdownload%2F%40vant%2Ficons-1.1.15.tgz#53c51ace21e9992bfeeb2e1ad9094fbf6506d116"
->>>>>>> zd
   integrity sha1-U8UaziHpmSv+6y4a2QlPv2UG0RY=
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.0.0":
@@ -2354,11 +2350,7 @@ core-js-pure@^3.0.0:
 
 core-js@^2.4.0:
   version "2.6.10"
-<<<<<<< HEAD
-  resolved "https://registry.npm.taobao.org/core-js/download/core-js-2.6.10.tgz#8a5b8391f8cc7013da703411ce5b585706300d7f"
-=======
   resolved "https://registry.npm.taobao.org/core-js/download/core-js-2.6.10.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcore-js%2Fdownload%2Fcore-js-2.6.10.tgz#8a5b8391f8cc7013da703411ce5b585706300d7f"
->>>>>>> master
   integrity sha1-iluDkfjMcBPacDQRzltYVwYwDX8=
 
 core-js@^3.3.2:
@@ -7674,17 +7666,10 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-<<<<<<< HEAD
 vant@^2.2.13:
   version "2.2.13"
-  resolved "https://registry.npm.taobao.org/vant/download/vant-2.2.13.tgz?cache=0&sync_timestamp=1573735389069&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvant%2Fdownload%2Fvant-2.2.13.tgz#394b6c75c919d2924bd025ae1cc797aac0ee76dd"
-  integrity sha1-OUtsdckZ0pJL0CWuHMeXqsDudt0=
-=======
-vant@^2.2.13-beta.0:
-  version "2.2.13-beta.0"
-  resolved "https://registry.npm.taobao.org/vant/download/vant-2.2.13-beta.0.tgz?cache=0&sync_timestamp=1573355319142&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvant%2Fdownload%2Fvant-2.2.13-beta.0.tgz#46f8611fa852665f935f18dfceb31728a3ea859e"
-  integrity sha1-RvhhH6hSZl+TXxjfzrMXKKPqhZ4=
->>>>>>> zd
+  resolved "https://registry.yarnpkg.com/vant/-/vant-2.2.13.tgz#394b6c75c919d2924bd025ae1cc797aac0ee76dd"
+  integrity sha512-0cE/cI/UNegETcTc6k9UwI1gPdMm74ATUN/SHXxXAtZm8Iz82ABl2GA3xd0A9Bl0scQYDn0PF355Pr92xZV9ew==
   dependencies:
     "@babel/runtime" "7.x"
     "@vant/icons" "1.1.15"
