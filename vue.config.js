@@ -10,10 +10,6 @@ module.exports={
                 target:"https://vip.yunifang.com",
                 changeOrigin:true
             },
-            "/member":{
-                target:"https://vip.yunifang.com",
-                changeOrigin:true
-            }
         }
     },
     configureWebpack:{

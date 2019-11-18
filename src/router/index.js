@@ -13,6 +13,7 @@ import indent from "./indent"
 import search from "./search"
 import classify from "./classify"
 import cart from "./cart"
+import show from "./show"
 Vue.use(VueRouter)
 
 const router=new VueRouter({
@@ -40,6 +41,7 @@ const router=new VueRouter({
         search,
         classify,
         cart,
+        show,
        {
            path:"/login",
            name:"login",

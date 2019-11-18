@@ -31,7 +31,6 @@ export default {
     async robNowApi() {
       let data = await robNowApi();
       this.list = data.data;
-      console.log(this.list)
     }
   },
   mounted(){
