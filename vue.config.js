@@ -13,6 +13,10 @@ module.exports={
             "/member":{
                 target:"https://vip.yunifang.com",
                 changeOrigin:true
+            },
+            "/users":{
+                target:"http://localhost:1500",
+                changeOrigin:true
             }
         }
     },

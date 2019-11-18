@@ -9,24 +9,24 @@
         <div v-if="num==0">
             <div class="one">
             <span>登录名</span>
-            <input type="text" placeholder="请输入手机号或邮箱" id="username" />
+            <input type="text" placeholder="请输入手机号或邮箱" id="username" v-model="username" />
             </div>
             <div class="two">
             <span>密码</span>
-            <input type="tsxt" placeholder="请输入密码" id="password" />
+            <input type="password" placeholder="请输入密码" id="password" v-model="password" />
             </div>
-            <router-link tag="button" to="/reoommend" class="button">登录</router-link>
+            <router-link tag="button" to="/reoommend" class="button" @click="login()">登录</router-link>
         </div>
         <div v-else-if="num==1">
             <div class="one">
             <span>注册名</span>
-            <input type="text" placeholder="请输入手机号或邮箱" id="username" />
+            <input type="text" placeholder="请输入手机号或邮箱" id="username" v-model="name" />
             </div>
             <div class="two">
             <span>注册密码</span>
-            <input type="tsxt" placeholder="请输入密码" id="password" />
+            <input type="password" placeholder="请输入密码" id="password" v-model="pass" />
             </div>
-            <button class="button">确认注册</button>
+            <button class="button" @click="register()">确认注册</button>
         </div>
     </keep-alive>
     <div class="agree">
@@ -40,11 +40,18 @@
   </div>
 </template>
 <script>
+import {registerApi} from "@api/login"
+import {loginApi} from "@api/login"
 export default {
   name: "Login",
   data(){
       return{
-          num:"0"
+          num:"0",
+          password:'',
+          username:'',
+          name:'',
+          pass:'',
+
       }
   },
   methods:{
@@ -64,8 +71,25 @@ export default {
         //   if(this.num=1){
         //       this.num=0;
         //   }
+      },
+      async register(){
+          console.log(this.name,this.pass)
+          let data=await registerApi("123","123");
+        //   this.num=0
+         console.log(data);
+      },
+      async login(){
+          let data=await loginApi(this.username,this.password);
+         console.log(data);
       }
-  }
+     
+
+  },
+//   created() {
+//       this.register();
+//       this.login();
+//   },
+
 };
 </script>
 
