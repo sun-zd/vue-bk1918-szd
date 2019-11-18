@@ -6,7 +6,7 @@
             tag="li"
             v-for="item in navs" 
             :key="item.id"
-            class="a"
+            class="nav"
             :to="item.path"
             >{{item.text}}</router-link>
         </ul>
@@ -60,6 +60,7 @@ export default {
     }
     #nav ul .router-link-active{
         color:#c33; 
+        border-bottom: 2px solid #c33;
     }
    #nav ul{
        width: 100%;
@@ -69,6 +70,8 @@ export default {
        align-items: center;
     }
     #nav ul li{
-        font-size: 0.12rem
+        font-size: 0.12rem;
+        font-weight: 600;
+        border-bottom:2px solid #fff;
     }
 </style>

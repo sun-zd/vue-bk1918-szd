@@ -127,10 +127,9 @@ export default {
       //   tel:this.phone,
       //   address:address
       // }})
-      // this.list.push(info)
-      // console.log(this.list);
-      // sessionStorage.setItem("dir_info",JSON.stringify(this.list));
-      // this.$router.push("/dir")
+      this.list.push(info)
+      sessionStorage.setItem("dir_info",JSON.stringify(this.list));
+      this.$router.push("/dir")
     }
   }
 };
